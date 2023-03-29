@@ -1,7 +1,7 @@
 ﻿class Verabreitung
 {
     private readonly Speicherort _speicherort;
-    private int zahl = 1;
+    private int zaehlerSammeln = 1;
 
 
     public Verabreitung(Speicherort speicherort)
@@ -29,19 +29,19 @@
         if(energie >= 1)
         {
             energie -= 1;
-            switch (zahl)
+            switch (zaehlerSammeln)
             {
                 case 0:
                     fliegenpilz++;
-                    zahl++;
+                    zaehlerSammeln++;
                     break;
                 case 1:
                     pilz++;
-                    zahl++;
+                    zaehlerSammeln++;
                     break;
                 case 2:
                     stock++;
-                    zahl = 0;
+                    zaehlerSammeln = 0;
                     break;
 
             }
@@ -50,4 +50,5 @@
             _speicherort.Pilz = pilz;
         }
     }
+
 }
