@@ -24,6 +24,7 @@
     {
         int energie = _speicherort.Energie;
         int fliegenpilz = _speicherort.Fliegenpilz;
+        int kraut = _speicherort.Kraut;
         int pilz = _speicherort.Pilz;
         int stock = _speicherort.Stock;
         if(energie >= 1)
@@ -41,12 +42,17 @@
                     break;
                 case 2:
                     stock++;
-                    zaehlerSammeln = 0;
+                    zaehlerSammeln++;
                     break;
+                case 3:
+                    kraut++;
+                    zaehlerSammeln = 0;
+                    break
 
             }
             _speicherort.Stock = stock;
             _speicherort.Fliegenpilz = fliegenpilz;
+            _speicherort.Kraut = kraut;
             _speicherort.Pilz = pilz;
         }
     }
