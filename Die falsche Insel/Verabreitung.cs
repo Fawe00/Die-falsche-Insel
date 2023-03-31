@@ -12,7 +12,7 @@
     {
         int energie = _speicherort.Energie;
         int baumstamm = _speicherort.Baumstamm;
-        if (energie > 5)
+        if (energie >= 5)
         {
             energie -= 5;
             baumstamm++;
@@ -50,5 +50,16 @@
             _speicherort.Pilz = pilz;
         }
     }
-
+    public void SteinAbBauen()
+    {
+        int energie = _speicherort.Energie;
+        int stein = _speicherort.Stein;
+        if (energie >= 4)
+        {
+            energie -= 4;
+            stein++;
+            _speicherort.Energie = energie;
+            _speicherort.Stein = stein;
+        }
+    }
 }
