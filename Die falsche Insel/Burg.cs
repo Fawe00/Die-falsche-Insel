@@ -29,7 +29,9 @@
                     case "0":
                         _inventar.InventarAusagabe();
                         break;
-                
+                    default:
+                        Console.WriteLine("Die Angabe stimmt nicht überein.");
+                        break;
                 }
             }
         }

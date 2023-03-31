@@ -34,7 +34,7 @@
                         _inventar.InventarAusagabe();
                         break;
                     default:
-                        Console.WriteLine("Sie haben keine Nummer wo möglich ist.");
+                        Console.WriteLine("Die Angabe stimmt nicht überein.");
                         break;
                 }
             }

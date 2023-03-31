@@ -40,7 +40,7 @@ class Wald
                     case "9":
                         return "Dorf";
                     default:
-                        Console.WriteLine("Sie haben keine Nummer von 1 - 3 eingeben.");
+                        Console.WriteLine("Die Angabe stimmt nicht überein.");
                         break;
                 }
             }
