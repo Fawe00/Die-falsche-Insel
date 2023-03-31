@@ -25,6 +25,9 @@
             {
                 switch (_eingabe)
                 {
+                    case "1":
+                        _verarbeitung.SteinAbBauen();
+                        break;
                     case "9":
                         return "Wald";
                     case "0":
