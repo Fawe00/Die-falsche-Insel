@@ -3,7 +3,7 @@
     public static void Main(string[] args)
     {
         Console.WriteLine("Das Program wird gestartet");
-        Speicherort speicherort = new Speicherort(100, 0, 0, 0, 0);
+        Speicherort speicherort = new Speicherort(1000, 0, 0, 0, 0);
         Inventar inventar = new Inventar(speicherort);
         Verabreitung verabreitung = new Verabreitung(speicherort);
         Wald wald = new Wald(verabreitung, inventar);
