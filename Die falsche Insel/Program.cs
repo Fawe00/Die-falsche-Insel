@@ -4,7 +4,7 @@
     private readonly Wald _wald;
     private readonly Burg _burg;
 
-    private String runde = "Wald";
+    private String runde = "Burg";
 
     public Programm(Wald wald, Dorf dorf, Burg burg)
     {
