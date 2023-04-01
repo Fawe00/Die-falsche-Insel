@@ -11,7 +11,7 @@
         _verarbeitung = verabreitung;
         _inventar = inventar;
     }
-    public String BurgMain()
+    public String BergMain()
     {
         Console.WriteLine("Wikommen auf dem Berg");
         while (true)
