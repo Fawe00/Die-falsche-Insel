@@ -15,8 +15,8 @@
 
     //Story
     //König
-    private bool koenigAugabeErhaeltlich;
-    private int koenigAugebeStuffe;
+    private bool koenigAugabeErhaeltlich = true;
+    private int koenigAugebeStuffe = 0;
 
     public int Energie { get => energie; set => energie = value; }
     public int Baumstamm { get => baumstamm; set => baumstamm = value;}

@@ -29,7 +29,7 @@
                                 if (_speicherort.Kraut >= 1)
                                 {
                                     _speicherort.Kraut = 0;
-                                    Console.WriteLine("Danke für die Kräuter gegal wie viele es waren ich mache mir mal ein Tee, Sie können soweit machen was sie wollen");
+                                    Console.WriteLine("Danke für die Kräuter egal wie viele es waren ich mache mir mal ein Tee, Sie können soweit machen was sie wollen");
                                     _speicherort.KoenigAufgabe = false;
                                     _speicherort.KoenigAugabenStuffe++;
                                 }
@@ -38,13 +38,14 @@
                                 Console.WriteLine("Dann hollen Sie es bitte. Gehen sie über das Dorf in den Wald sammel nach einiger Zeit haben sie Kräuter in ihrem Inventar.");
                                 break;
                             default:
-                                Console.WriteLine("Sie können bei Aufgaben nur Ja oder Nein schreiben");
+                                Console.WriteLine("Sie können bei Aufgaben nur Ja oder Nein schreiben!");
                                 break;
                         }
                     }
                     break;
                 case 2:
-                    Console.WriteLine("")
+                    Console.WriteLine("");
+                    break;
             }
         }
         else
