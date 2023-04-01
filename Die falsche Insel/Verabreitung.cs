@@ -47,13 +47,14 @@
                 case 3:
                     kraut++;
                     zaehlerSammeln = 0;
-                    break
+                    break;
 
             }
             _speicherort.Stock = stock;
             _speicherort.Fliegenpilz = fliegenpilz;
             _speicherort.Kraut = kraut;
             _speicherort.Pilz = pilz;
+            _speicherort.Energie = energie;
         }
     }
     public void SteinAbBauen()
