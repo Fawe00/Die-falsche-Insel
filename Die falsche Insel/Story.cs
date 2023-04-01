@@ -14,8 +14,8 @@
             switch (_speicherort.KoenigAugabenStuffe)
             {
                 case 0:
-                    Console.WriteLine("Hallo Guten Tag ich bin König Baduin und heisse Sie herzlich wikommen auf der Burg");
-                    Console.WriteLine("Können Sie bitte mal in den Wald Reisen und dort Kräuter hollen ich habe ihrgend etwas fasch gegessen");
+                    Console.WriteLine("Hallo Guten Tag ich bin König Balduin und heisse Sie Herzlich Willkommen auf der Burg.");
+                    Console.WriteLine("Können Sie bitte mal in den Wald Reisen und dort Kräuter hollen ich habe ihrgend wie etwas fasch gegessen.");
                     _speicherort.KoenigAugabenStuffe = 1;
                     break;
                 case 1:
@@ -35,11 +35,13 @@
                                 }
                                 break;
                             case "Nein":
-                                Console.WriteLine("Dann hollen Sie es Bitte Gehen sie über das Dorf in den Wald sammel nach einiger Zeit haben sie Kräuter in ihrem Inventar.");
+                                Console.WriteLine("Dann hollen Sie es bitte. Gehen sie über das Dorf in den Wald sammel nach einiger Zeit haben sie Kräuter in ihrem Inventar.");
                                 break;
                         }
                     }
                     break;
+                case 2:
+                    Console.WriteLine("")
             }
         }
         else

@@ -4,14 +4,16 @@
     private readonly Verabreitung _verarbeitung;
     private readonly Inventar _inventar;
     private readonly Speicherort _speicherort;
+    private readonly Story _story;
 
 
 
-    public Burg(Verabreitung verabreitung, Inventar inventar, Speicherort speicherort)
+    public Burg(Verabreitung verabreitung, Inventar inventar, Speicherort speicherort, Story story)
     {
         _verarbeitung = verabreitung;
         _inventar = inventar;
         _speicherort = speicherort;
+        _story = story;
     }
     public String BurgMain()
     {
@@ -36,7 +38,8 @@
                         _inventar.InventarAusagabe();
                         break;
                     case "K":
-
+                        _story.KönigAufgaben();
+                        break;
                     default:
                         Console.WriteLine("Die Angabe stimmt nicht überein.");
                         break;
