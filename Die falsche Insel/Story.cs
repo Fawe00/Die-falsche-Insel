@@ -37,6 +37,9 @@
                             case "Nein":
                                 Console.WriteLine("Dann hollen Sie es bitte. Gehen sie über das Dorf in den Wald sammel nach einiger Zeit haben sie Kräuter in ihrem Inventar.");
                                 break;
+                            default:
+                                Console.WriteLine("Sie können bei Aufgaben nur Ja oder Nein schreiben");
+                                break;
                         }
                     }
                     break;
