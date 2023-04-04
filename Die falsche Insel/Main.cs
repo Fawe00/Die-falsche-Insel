@@ -10,7 +10,8 @@
         Wald wald = new Wald(verabreitung, inventar);
         Dorf dorf = new Dorf(verabreitung, inventar);
         Burg burg = new Burg(verabreitung, inventar, speicherort, story);
-        Programm programm = new Programm(wald, dorf, burg);
+        Berg berg = new Berg(verabreitung, inventar);
+        Programm programm = new Programm(wald, dorf, burg, berg);
         programm.Runde();
 
     }
