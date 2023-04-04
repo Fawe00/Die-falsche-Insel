@@ -1,6 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-
-class Wald
+﻿class Wald
 {
     private String _eingabe = null;
     private readonly Verabreitung _verarbeitung;
