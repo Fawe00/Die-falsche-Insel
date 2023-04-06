@@ -69,4 +69,52 @@
             _speicherort.Stein = stein;
         }
     }
+    public void KarottenErnten()
+    {
+        int energie = _speicherort.Energie;
+        int karotten = _speicherort.Karotten;
+        if (energie >= 3)
+        {
+            energie -= 3;
+            karotten++;
+            _speicherort.Energie = energie;
+            _speicherort.Karotten = karotten;
+        }
+    }
+    public void KartoffelnErnten()
+    {
+        int energie = _speicherort.Energie;
+        int kartoffeln = _speicherort.Kartoffeln;
+        if (energie >= 3)
+        {
+            energie -= 3;
+            kartoffeln++;
+            _speicherort.Energie = energie;
+            _speicherort.Kartoffeln = kartoffeln;
+        }
+    }
+    public void ApfelPlucken()
+    {
+        int energie = _speicherort.Energie;
+        int apfel = _speicherort.Apfel;
+        if (apfel >= 1)
+        {
+            energie -= 1;
+            apfel++;
+            _speicherort.Apfel = apfel;
+            _speicherort.Energie = energie;
+        }
+    }
+    public void BirnePlucken()
+    {
+        int energie = _speicherort.Energie;
+        int birne = _speicherort.Birne;
+        if (energie >= 1)
+        {
+            energie -= 1;
+            birne++;
+            _speicherort.Birne = birne;
+            _speicherort.Energie = energie;
+        }
+    }
 }
