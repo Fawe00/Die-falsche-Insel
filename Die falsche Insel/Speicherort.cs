@@ -7,6 +7,8 @@
     //Material
     private int baumstamm;
     private int fliegenpilz;
+    private int karotten;
+    private int kartoffeln;
     private int kraut;
     private int pilz;
     private int stein;
@@ -21,6 +23,8 @@
     public int Energie { get => energie; set => energie = value; }
     public int Baumstamm { get => baumstamm; set => baumstamm = value;}
     public int Fliegenpilz { get => fliegenpilz; set => fliegenpilz = value;}
+    public int Karotten { get => karotten; set => karotten = value;}
+    public int Kartoffeln { get => kartoffeln; set => kartoffeln = value;}
     public int Kraut { get => kraut; set => kraut = value;}
     public int Pilz { get => pilz; set => pilz = value;}
     public int Stein { get =>  stein; set => stein = value;}
