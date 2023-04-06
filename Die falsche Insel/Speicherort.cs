@@ -5,6 +5,8 @@
 
 
     //Material
+    private int apfel;
+    private int birne;
     private int baumstamm;
     private int fliegenpilz;
     private int karotten;
@@ -21,6 +23,8 @@
     private int koenigAugebeStuffe = 0;
 
     public int Energie { get => energie; set => energie = value; }
+    public int Apfel { get => apfel; set => apfel = value; }
+    public int Birne { get => birne; set => birne = value; }
     public int Baumstamm { get => baumstamm; set => baumstamm = value;}
     public int Fliegenpilz { get => fliegenpilz; set => fliegenpilz = value;}
     public int Karotten { get => karotten; set => karotten = value;}
