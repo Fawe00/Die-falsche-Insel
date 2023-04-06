@@ -35,7 +35,7 @@
                         Console.WriteLine("1. Kartoffeln");
                         Console.WriteLine("2. Karotten");
                         _eingabe = Console.ReadLine();
-                        if ( _eingabe != null)
+                        if (_eingabe != null)
                         {
                             switch (_eingabe)
                             {
@@ -56,9 +56,9 @@
                         Console.WriteLine("1. Apfelbaum");
                         Console.WriteLine("2. Birnenbaum");
                         _eingabe = Console.ReadLine();
-                        if( _eingabe != null)
+                        if (_eingabe != null)
                         {
-                            switch ( _eingabe)
+                            switch (_eingabe)
                             {
                                 case "1":
                                     _verarbeitung.ApfelPlucken();
@@ -82,5 +82,6 @@
                         break;
                 }
             }
+        }
     }
 }
