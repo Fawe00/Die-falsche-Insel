@@ -6,9 +6,8 @@
     private readonly Speicherort _speicherort;
     private readonly Story _story;
 
-    public Bauerhof(string eingabe, Verabreitung verarbeitung, Inventar inventar, Speicherort speicherort, Story story)
+    public Bauerhof(Verabreitung verarbeitung, Inventar inventar, Speicherort speicherort, Story story)
     {
-        _eingabe = eingabe;
         _verarbeitung = verarbeitung;
         _inventar = inventar;
         _speicherort = speicherort;
@@ -21,7 +20,7 @@
         {
             Console.WriteLine("Sie können hier folgen Sachen machen:");
             Console.WriteLine("1. Feldfrüchte ernten");
-            Console.WriteLine("2. Baufrüchte ernten");
+            Console.WriteLine("2. Obstbäume ernten");
             Console.WriteLine("9. Reisen in das Dorf");
             Console.WriteLine("0. Inventar ausgeben lassen");
             Console.WriteLine("Geben Sie die Nummer/Buchstabe ein die Sie wählen wollen");
