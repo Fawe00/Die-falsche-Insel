@@ -97,7 +97,12 @@
                                 break;
                         }
                     }
+                    break;
             }
+        }
+        else
+        {
+            Console.WriteLine("Der Bauer hat keine Aufgabe für Sie.");
         }
     }
 }
