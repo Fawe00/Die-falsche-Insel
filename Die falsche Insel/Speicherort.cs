@@ -37,11 +37,16 @@
     public bool KoenigAufgabe { get => koenigAugabeErhaeltlich; set => koenigAugabeErhaeltlich = value;}
     public int KoenigAugabenStuffe { get => koenigAugebeStuffe; set => koenigAugebeStuffe = value;}
 
-    public Speicherort(int energie, int baumstamm, int fliegenpilz, int pilz, int stein, int stock)
+    public Speicherort(int energie,int apfel, int birne, int baumstamm, int fliegenpilz, int karotten, int kartoffeln, int kraut, int pilz, int stein, int stock)
     {
         Energie = energie;
+        Apfel = apfel;
+        Birne = birne;
         Baumstamm = baumstamm;
         Fliegenpilz = fliegenpilz;
+        Karotten = karotten;
+        Kartoffeln = kartoffeln;
+        Kraut = kraut;
         Pilz = pilz;
         Stein = stein;
         Stock = stock;
