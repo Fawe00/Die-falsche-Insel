@@ -19,7 +19,7 @@
             Console.WriteLine("Sie können hier folgen Sachen machen:");
             Console.WriteLine("7. Reisen Wald");
             Console.WriteLine("8. Reisen Burg");
-            Console.WriteLine("9. Reisen Wiese");
+            Console.WriteLine("9. Reisen Bauernhof");
             Console.WriteLine("0. Inverntar ausgeben lassen");
             _eingabe = Console.ReadLine();
             if ( _eingabe != null )
@@ -31,7 +31,7 @@
                     case "8":
                         return "Burg";
                     case "9":
-                        return "Wiese";
+                        return "Bauernhof";
                     case "0":
                         _inventar.InventarAusagabe();
                         break;
