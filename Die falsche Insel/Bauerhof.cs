@@ -23,6 +23,10 @@
             Console.WriteLine("2. Obstbäume ernten");
             Console.WriteLine("9. Reisen in das Dorf");
             Console.WriteLine("0. Inventar ausgeben lassen");
+            if (_speicherort.BauerAufgabe == true)
+            {
+                Console.WriteLine("B. Mit dem Bauer Reden");
+            }
             Console.WriteLine("Geben Sie die Nummer/Buchstabe ein die Sie wählen wollen");
             _eingabe = Console.ReadLine();
             if (_eingabe != null)
@@ -75,6 +79,9 @@
                         return "Dorf";
                     case "0":
                         _inventar.InventarAusagabe();
+                        break;
+                    case "B":
+                        _story.BauerAufgabe();
                         break;
                     default:
                         Console.WriteLine("Die Eingabe ist nicht korekt.");
