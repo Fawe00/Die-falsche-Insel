@@ -83,6 +83,7 @@
                                     Console.WriteLine("Danke für das Obst.");
                                     Console.WriteLine("Sie können jederzeit weiters Essen auch für Sie ernten das sie wieder mehr energie haben.");
                                     Console.WriteLine("Essen können Sie bei der Burg im Speisesall.");
+                                    _speicherort.KoenigAufgabe = true;
                                 }
                                 else
                                 {
@@ -97,6 +98,10 @@
                                 break;
                         }
                     }
+                    break;
+                default:
+                    Console.WriteLine("Es ist ein System fehler aufgetreten.");
+                    Console.WriteLine("Sie können einfach weitermachen");
                     break;
             }
         }
