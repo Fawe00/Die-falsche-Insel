@@ -73,9 +73,9 @@
     {
         int energie = _speicherort.Energie;
         int karotten = _speicherort.Karotten;
-        if (energie >= 3)
+        if (energie >= 1)
         {
-            energie -= 3;
+            energie -= 1;
             karotten++;
             _speicherort.Energie = energie;
             _speicherort.Karotten = karotten;
