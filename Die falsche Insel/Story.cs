@@ -63,11 +63,11 @@
                     Console.WriteLine("Hallo Fremder wie kommt es zu den das Sie hier auf der insel der Ernte?");
                     Console.WriteLine("Egal wie sie schon hier seit könnt ihr mir ein gefallen helfen?");
                     Console.WriteLine("Könnte ihr mir bitte 1 Birne und 1 Apfel bringen?");
-                    Console.WriteLine("Ich will eine Pause machen und habe keine Obst");
+                    Console.WriteLine("Ich will eine Pause machen und habe keine Früchte");
                     _speicherort.BauerAufgabeStuffe++;
                     break;
                 case 1:
-                    Console.WriteLine("Oh sie sind zurück haben sie das Obst?");
+                    Console.WriteLine("Oh sie sind zurück haben sie die Früchte?");
                     eingabe = Console.ReadLine();
                     if (eingabe != null)
                     {
@@ -80,18 +80,18 @@
                                     Console.WriteLine("Oh wie schön wiklich sehr frisch.");
                                     _speicherort.Apfel = 0;
                                     _speicherort.Birne = 0;
-                                    Console.WriteLine("Danke für das Obst.");
+                                    Console.WriteLine("Danke für die Früchte.");
                                     Console.WriteLine("Sie können jederzeit weiters Essen auch für Sie ernten das sie wieder mehr energie haben.");
                                     Console.WriteLine("Essen können Sie bei der Burg im Speisesall.");
                                     _speicherort.KoenigAufgabe = true;
                                 }
                                 else
                                 {
-                                    Console.WriteLine("Sie haben garkeit oder nur ein Obst gepückt schauen sie nochmals in ihren Bäute nach was sie nicht haben und gehen sie das Ernten.");
+                                    Console.WriteLine("Sie haben garkeit oder nur eine Frucht gepückt schauen sie nochmals in ihren Bäute nach was sie nicht haben und gehen sie das Ernten.");
                                 }
                                 break;
                             case "Nein":
-                                Console.WriteLine("Sie können zust zu den Obstbäumen und dann dort Äpfel oder Birnen plücken.");
+                                Console.WriteLine("Sie können zust zu den Fruchtbäumen und dann dort Äpfel oder Birnen plücken.");
                                 break;
                             default:
                                 Console.WriteLine("Sie können bei Aufgaben nur Ja oder Nein schreiben!");
