@@ -5,15 +5,17 @@
     private readonly Inventar _inventar;
     private readonly Speicherort _speicherort;
     private readonly Story _story;
+    private readonly Essen _essen;
 
 
 
-    public Burg(Verabreitung verabreitung, Inventar inventar, Speicherort speicherort, Story story)
+    public Burg(Verabreitung verabreitung, Inventar inventar, Speicherort speicherort, Story story, Essen essen)
     {
         _verarbeitung = verabreitung;
         _inventar = inventar;
         _speicherort = speicherort;
         _story = story;
+        _essen = essen;
     }
     public String BurgMain()
     {
@@ -21,6 +23,7 @@
         while (true)
         {
             Console.WriteLine("Sie können hier folgen Sachen machen:");
+            Console.WriteLine("1. Essen im Saal");
             Console.WriteLine("9. Reisen Dorf");
             Console.WriteLine("0. Inventar ausgeben lassen");
             if ( _speicherort.KoenigAufgabe == true )
@@ -39,6 +42,9 @@
                         break;
                     case "K":
                         _story.KönigAufgaben();
+                        break;
+                    case "1":
+                        _essen.Saal();
                         break;
                     default:
                         Console.WriteLine("Die Angabe stimmt nicht überein.");
