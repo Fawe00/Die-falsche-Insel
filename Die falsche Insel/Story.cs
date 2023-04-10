@@ -29,13 +29,13 @@
                                 if (_speicherort.Kraut >= 1)
                                 {
                                     _speicherort.Kraut = 0;
-                                    Console.WriteLine("Danke für die Kräuter egal wie viele es waren ich mache mir mal ein Tee, Sie können soweit machen was sie wollen");
+                                    Console.WriteLine("Danke für die Kräuter egal wie viele es waren, ich mache mir mal ein Tee, Sie können jetzt machen was sie wollen.");
                                     _speicherort.KoenigAufgabe = false;
                                     _speicherort.KoenigAugabenStuffe++;
                                 }
                                 break;
                             case "Nein":
-                                Console.WriteLine("Dann hollen Sie es bitte. Gehen sie über das Dorf in den Wald sammel nach einiger Zeit haben sie Kräuter in ihrem Inventar.");
+                                Console.WriteLine("Dann hollen Sie es bitte. Gehen sie über das Dorf in den Wald sammel nach einiger Zeit haben sie Kräuter in ihrem Bäutel.");
                                 break;
                             default:
                                 Console.WriteLine("Sie können bei Aufgaben nur Ja oder Nein schreiben!");
@@ -81,7 +81,7 @@
                                     _speicherort.Apfel = 0;
                                     _speicherort.Birne = 0;
                                     Console.WriteLine("Danke für die Früchte.");
-                                    Console.WriteLine("Sie können jederzeit weiters Essen auch für Sie ernten das sie wieder mehr energie haben.");
+                                    Console.WriteLine("Sie können jederzeit weiters Essen auch für Sie ernten das sie wieder mehr Energie haben.");
                                     Console.WriteLine("Essen können Sie bei der Burg im Speisesall.");
                                     _speicherort.KoenigAufgabe = true;
                                 }

@@ -23,7 +23,7 @@
         while (true)
         {
             Console.WriteLine("Sie können hier folgen Sachen machen:");
-            Console.WriteLine("1. Essen im Saal");
+            Console.WriteLine("1. Essen im Speisesaal");
             Console.WriteLine("9. Reisen Dorf");
             Console.WriteLine("0. Inventar ausgeben lassen");
             if ( _speicherort.KoenigAufgabe == true )
