@@ -46,6 +46,10 @@
                 case 2:
                     Console.WriteLine("");
                     break;
+                default:
+                    Console.WriteLine("Es ist ein Systemfehler aufgetreten.");
+                    Console.WriteLine("Sie können einfach weitermachen");
+                    break;
             }
         }
         else
@@ -100,7 +104,7 @@
                     }
                     break;
                 default:
-                    Console.WriteLine("Es ist ein System fehler aufgetreten.");
+                    Console.WriteLine("Es ist ein Systemfehler aufgetreten.");
                     Console.WriteLine("Sie können einfach weitermachen");
                     break;
             }
