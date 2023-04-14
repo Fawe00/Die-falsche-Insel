@@ -48,7 +48,6 @@
                     Console.WriteLine("Wenn Sie ein Platz zum Wohen brachen hinter den Fluss auf der Wiese hat es noch Platz für ein Haus");
                     Console.WriteLine("Natürlich können sie sich auch ein Zimmer im Dorf mieten oder im Wald vor einen Lagerfuer schlafen");
                     Console.WriteLine("Geht das für sie so in Ortnung.");
-                    _speicherort.KoenigAugabenStuffe++;
                     break;
                 case 3:
 
