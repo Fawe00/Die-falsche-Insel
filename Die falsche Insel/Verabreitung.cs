@@ -117,4 +117,50 @@
             _speicherort.Energie = energie;
         }
     }
+    public void Wasserschoepfen()
+    {
+        int energie = _speicherort.Energie;
+        int beutel = _speicherort.Beutel;
+        int wasserbeutel = _speicherort.WasserBeutel;
+        if (energie >= 1)
+        {
+            if (beutel >= 1)
+            {
+                beutel--;
+                energie--;
+                wasserbeutel++;
+            }
+            else
+            {
+                Console.WriteLine("Sie haben keine Beutel zum befüllen mit Wasser.");
+            }
+        }
+        _speicherort.Energie = energie;
+        _speicherort.Beutel = beutel;
+        _speicherort.WasserBeutel = wasserbeutel;
+    }
+    public void LehmStecken()
+    {
+        int energie = _speicherort.Energie;
+        int lehm = _speicherort.Lehm;
+        if (energie >= 2)
+        {
+            lehm++;
+            energie -= 2;
+        }
+        _speicherort.Energie = energie;
+        _speicherort.Lehm = lehm;
+    }
+    public void SandNehmen()
+    {
+        int energie = _speicherort.Energie;
+        int sand = _speicherort.Sand;
+        if( energie >= 2)
+        {
+            sand++;
+            energie -= 2;
+        }
+        _speicherort.Energie = energie;
+        _speicherort.Sand = sand;
+    }
 }
