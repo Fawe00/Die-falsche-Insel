@@ -15,7 +15,7 @@
             {
                 case 0:
                     Console.WriteLine("Hallo Guten Tag ich bin König Balduin und heisse Sie Herzlich Willkommen auf der Burg.");
-                    Console.WriteLine("Können Sie bitte mal in den Wald Reisen und dort Kräuter hollen ich habe ihrgend wie etwas fasch gegessen.");
+                    Console.WriteLine("Können Sie bitte mal in den Wald Reisen und dort Kräuter hollen ich habe ihrgend wie etwas falsch gegessen.");
                     _speicherort.KoenigAugabenStuffe = 1;
                     break;
                 case 1:

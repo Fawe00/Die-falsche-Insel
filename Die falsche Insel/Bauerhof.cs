@@ -75,7 +75,7 @@
                             }
                         }
                         break;
-                    case "3":
+                    case "9":
                         return "Dorf";
                     case "0":
                         _inventar.InventarAusagabe();
