@@ -53,18 +53,21 @@
     public bool BauerAufgabe { get => bauerAufgabeErhalten; set => bauerAufgabeErhalten = value;}
     public int BauerAufgabeStuffe { get => bauerAufbabenStuffe; set => bauerAufbabenStuffe = value;}
 
-    public Speicherort(int energie,int apfel, int birne, int baumstamm, int fliegenpilz, int karotten, int kartoffeln, int kraut, int pilz, int stein, int stock)
+    public Speicherort(int energie,int apfel, int birne, int beutel, int baumstamm, int fliegenpilz, int karotten, int kartoffeln, int kraut, int lehm, int pilz, int stein, int stock, int wasserbeutel)
     {
         Energie = energie;
         Apfel = apfel;
         Birne = birne;
+        Beutel = beutel;
         Baumstamm = baumstamm;
         Fliegenpilz = fliegenpilz;
         Karotten = karotten;
         Kartoffeln = kartoffeln;
         Kraut = kraut;
+        Lehm = lehm;
         Pilz = pilz;
         Stein = stein;
         Stock = stock;
+        WasserBeutel = wasserbeutel;
     }
 }
