@@ -13,8 +13,8 @@
         Burg burg = new Burg(verabreitung, inventar, speicherort, story, essen);
         Berg berg = new Berg(verabreitung, inventar);
         Bauerhof bauerhof = new Bauerhof(verabreitung, inventar, speicherort, story);
-
-        Programm programm = new Programm(wald, dorf, burg, berg, bauerhof);
+        Fluss fluss = new Fluss(verabreitung, inventar, speicherort);
+        Programm programm = new Programm(wald, dorf, burg, berg, bauerhof, fluss);
         programm.Runde();
 
     }
