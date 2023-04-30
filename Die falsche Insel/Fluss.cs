@@ -51,6 +51,7 @@
                     }
                     else
                     {
+                        _verarbeitung.BauenBruecke();
                         break;
                     }
                 case "0":

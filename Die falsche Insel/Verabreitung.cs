@@ -163,4 +163,54 @@
         _speicherort.Energie = energie;
         _speicherort.Sand = sand;
     }
+    
+
+
+    // Bauen von Objekten
+    public void BauenBruecke()
+    {
+        int energie = _speicherort.Energie;
+        int stein = _speicherort.Stein;
+        int baumstamm = _speicherort.Baumstamm;
+        Console.WriteLine("Haben sie 10 Baumstämme und 9 Stein?");
+        String eingabe = Console.ReadLine();
+        if(eingabe != null)
+        {
+            switch(eingabe)
+            {
+                case "j":
+                case "Ja":
+                case "ja":
+                    if(baumstamm == 10 && stein == 9)
+                    {
+                        if(energie  == 25)
+                        {
+                            Console.WriteLine("Die brücke ist jetzt fertig, Sie können sie jetzt vorsichtig begehen");
+                            energie -= 25;
+                            stein -= 9;
+                            baumstamm -= 10;
+                            _speicherort.Brueckefluss = true;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Sie haben zu wenig energie, Sie bauchen 25 davon");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Es fehlen Resouressen!");
+                    }
+                    break;
+                case "n":
+                case "nein":
+                case "ne":
+                    Console.WriteLine("Dann kann die Brücke nicht gbaut werden");
+                    break;
+            }
+        }
+        _speicherort.Stein = stein;
+        _speicherort.Baumstamm = baumstamm;
+        _speicherort.Energie = energie;
+    }
+
 }
