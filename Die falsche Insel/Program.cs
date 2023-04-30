@@ -5,16 +5,18 @@
     private readonly Burg _burg;
     private readonly Berg _berg;
     private readonly Bauerhof _bauerhof;
+    private readonly Fluss _fluss;
 
     private String runde = "Burg";
 
-    public Programm(Wald wald, Dorf dorf, Burg burg, Berg berg, Bauerhof bauerhof)
+    public Programm(Wald wald, Dorf dorf, Burg burg, Berg berg, Bauerhof bauerhof, Fluss fluss)
     {
         _wald = wald;
         _dorf = dorf;
         _burg = burg;
         _berg = berg;
         _bauerhof = bauerhof;
+        _fluss = fluss;
     }
     public void Runde()
     {
@@ -37,6 +39,8 @@
                 case "Bauernhof":
                     runde = _bauerhof.BauerhofMain();
                     break;
+                case "Fluss":
+                    runde = _fluss.FlussMain();
                 default:
                     runde = "Wald";
                     break;
