@@ -176,41 +176,51 @@
         String eingabe = Console.ReadLine();
         if(eingabe != null)
         {
-            switch(eingabe)
-            {
-                case "j":
-                case "Ja":
-                case "ja":
-                    if(baumstamm == 10 && stein == 9)
+            bool janein = JaNeinGross(eingabe);
+            if (janein) {
+
+                if (baumstamm == 10 && stein == 9)
+                {
+                    if (energie == 25)
                     {
-                        if(energie  == 25)
-                        {
-                            Console.WriteLine("Die brücke ist jetzt fertig, Sie können sie jetzt vorsichtig begehen");
-                            energie -= 25;
-                            stein -= 9;
-                            baumstamm -= 10;
-                            _speicherort.Brueckefluss = true;
-                        }
-                        else
-                        {
-                            Console.WriteLine("Sie haben zu wenig energie, Sie bauchen 25 davon");
-                        }
+                        Console.WriteLine("Die brücke ist jetzt fertig, Sie können sie jetzt vorsichtig begehen");
+                        energie -= 25;
+                        stein -= 9;
+                        baumstamm -= 10;
+                        _speicherort.Brueckefluss = true;
                     }
                     else
                     {
-                        Console.WriteLine("Es fehlen Resouressen!");
+                        Console.WriteLine("Sie haben zu wenig energie, Sie bauchen 25 davon");
                     }
-                    break;
-                case "n":
-                case "nein":
-                case "ne":
-                    Console.WriteLine("Dann kann die Brücke nicht gbaut werden");
-                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Es fehlen Resouressen!");
+                    Console.WriteLine("Dann kann die Brücke nicht gebaut werden");
+                }
             }
         }
         _speicherort.Stein = stein;
         _speicherort.Baumstamm = baumstamm;
         _speicherort.Energie = energie;
     }
-
+    public bool JaNeinGross(String eingabe)
+    {
+        switch (eingabe)
+        {
+            case "j":
+            case "ja":
+            case "J":
+            case "Ja":
+                return true;
+            case "n":
+            case "nein":
+            case "N":
+            case "Nein":
+                return false;
+            default:
+                return false;
+        }
+    }
 }
