@@ -6,29 +6,31 @@
     private readonly Speicherort _speicherort;
     private readonly Story _story;
     private readonly Essen _essen;
+    private readonly Standard _standard;
 
 
 
-    public Burg(Verabreitung verabreitung, Inventar inventar, Speicherort speicherort, Story story, Essen essen)
+    public Burg(Verabreitung verabreitung, Inventar inventar, Speicherort speicherort, Story story, Essen essen, Standard standard)
     {
         _verarbeitung = verabreitung;
         _inventar = inventar;
         _speicherort = speicherort;
         _story = story;
         _essen = essen;
+        _standard = standard;
     }
     public String BurgMain()
     {
-        Console.WriteLine("Wikommen im Dorf des Handels");
+        Console.WriteLine("Willkommen im Dorf des Handels");
         while (true)
         {
             Console.WriteLine("Sie können hier folgen Sachen machen:");
             Console.WriteLine("1. Essen im Speisesaal");
             Console.WriteLine("9. Reisen Dorf");
-            Console.WriteLine("0. Inventar ausgeben lassen");
+            _standard.StandartEingabe0Wahl();
             if ( _speicherort.KoenigAufgabe == true )
             {
-                Console.WriteLine("K. Mit dem König Reden");
+                Console.WriteLine("K. Mit dem König reden");
             }
             _eingabe = Console.ReadLine();
             if (_eingabe != null)
@@ -47,7 +49,7 @@
                         _essen.Saal();
                         break;
                     default:
-                        Console.WriteLine("Die Angabe stimmt nicht überein.");
+                        _standard.StandartFalscheEingabe();
                         break;
                 }
             }

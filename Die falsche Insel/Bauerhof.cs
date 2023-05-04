@@ -5,13 +5,15 @@
     private readonly Inventar _inventar;
     private readonly Speicherort _speicherort;
     private readonly Story _story;
+    private readonly Standard _standart;
 
-    public Bauerhof(Verabreitung verarbeitung, Inventar inventar, Speicherort speicherort, Story story)
+    public Bauerhof(Verabreitung verarbeitung, Inventar inventar, Speicherort speicherort, Story story, Standard standard)
     {
         _verarbeitung = verarbeitung;
         _inventar = inventar;
         _speicherort = speicherort;
         _story = story;
+        _standart = standard;
     }
     public string BauerhofMain()
     {
@@ -23,12 +25,12 @@
             Console.WriteLine("2. Obstbäume ernten");
             Console.WriteLine("8. Reisen zum Fluss");
             Console.WriteLine("9. Reisen in das Dorf");
-            Console.WriteLine("0. Inventar ausgeben lassen");
+            _standart.StandartEingabe0Wahl();
             if (_speicherort.BauerAufgabe == true)
             {
-                Console.WriteLine("B. Mit dem Bauer Reden");
+                Console.WriteLine("B. Mit dem Bauer reden");
             }
-            Console.WriteLine("Geben Sie die Nummer/Buchstabe ein die Sie wählen wollen");
+            Console.WriteLine("Geben Sie die Nummer/Buchstabe ein die Sie wählen wollen.");
             _eingabe = Console.ReadLine();
             if (_eingabe != null)
             {
@@ -50,7 +52,7 @@
                                     _verarbeitung.KarottenErnten();
                                     break;
                                 default:
-                                    Console.WriteLine("Flasche eingabe.");
+                                    _standart.StandartFalscheEingabe();
                                     break;
                             }
                         }
@@ -71,7 +73,7 @@
                                     _verarbeitung.BirnePlucken();
                                     break;
                                 default:
-                                    Console.WriteLine("Dies Obstbaum nummer gibt es nicht");
+                                    _standart.StandartFalscheEingabe();
                                     break;
                             }
                         }
@@ -87,7 +89,7 @@
                         _story.BauerAufgabe();
                         break;
                     default:
-                        Console.WriteLine("Die Eingabe ist nicht korekt.");
+                        _standart.StandartFalscheEingabe();
                         break;
                 }
             }

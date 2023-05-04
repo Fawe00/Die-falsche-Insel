@@ -3,13 +3,15 @@
     private String _eingabe = null;
     private readonly Verabreitung _verarbeitung;
     private readonly Inventar _inventar;
+    private readonly Standard _standard;
 
 
 
-    public Berg(Verabreitung verabreitung, Inventar inventar)
+    public Berg(Verabreitung verabreitung, Inventar inventar, Standard standard)
     {
         _verarbeitung = verabreitung;
         _inventar = inventar;
+        _standard = standard;
     }
     public String BergMain()
     {
@@ -19,7 +21,7 @@
             Console.WriteLine("Sie können hier folgen Sachen machen:");
             Console.WriteLine("1. Stein abbauen");
             Console.WriteLine("9. Reisen Wald");
-            Console.WriteLine("0. Inventar ausgeben lassen");
+            _standard.StandartEingabe0Wahl();
             _eingabe = Console.ReadLine();
             if (_eingabe != null)
             {
@@ -34,7 +36,7 @@
                         _inventar.InventarAusagabe();
                         break;
                     default:
-                        Console.WriteLine("Die Angabe stimmt nicht überein.");
+                        _standard.StandartFalscheEingabe();
                         break;
                 }
             }

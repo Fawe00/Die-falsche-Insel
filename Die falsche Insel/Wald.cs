@@ -3,11 +3,13 @@
     private String _eingabe = null;
     private readonly Verabreitung _verarbeitung;
     private readonly Inventar _inventar;
+    private readonly Standard _standard;
 
-    public Wald(Verabreitung verabreitung, Inventar inventar) 
+    public Wald(Verabreitung verabreitung, Inventar inventar, Standard standard) 
     {
         _verarbeitung = verabreitung;
         _inventar = inventar;
+        _standard = standard;
     }
 
     public string WaldMain()
@@ -19,8 +21,7 @@
             Console.WriteLine("1. Baum fällen");
             Console.WriteLine("2. Material vom Boden aufsammeln");
             Console.WriteLine("9. Reisen in das Dorf");
-            Console.WriteLine("0. Inventar ausgeben lassen");
-            Console.WriteLine("Geben Sie die Nummer ein die Sie wählen wollen");
+            _standard.StandartEingabe0Wahl();
             _eingabe = Console.ReadLine();
             if (_eingabe != null)
             {

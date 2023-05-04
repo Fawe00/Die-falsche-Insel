@@ -3,6 +3,7 @@
     public static void Main(string[] args)
     {
         Console.WriteLine("Das Program wird gestartet");
+        Standard standart = new Standard();
         Speicherort speicherort = new Speicherort(1000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
         Inventar inventar = new Inventar(speicherort);
         Verabreitung verabreitung = new Verabreitung(speicherort);
@@ -10,9 +11,9 @@
         Essen essen = new Essen(speicherort);
         Wald wald = new Wald(verabreitung, inventar);
         Dorf dorf = new Dorf(verabreitung, inventar);
-        Burg burg = new Burg(verabreitung, inventar, speicherort, story, essen);
+        Burg burg = new Burg(verabreitung, inventar, speicherort, story, essen, standart);
         Berg berg = new Berg(verabreitung, inventar);
-        Bauerhof bauerhof = new Bauerhof(verabreitung, inventar, speicherort, story);
+        Bauerhof bauerhof = new Bauerhof(verabreitung, inventar, speicherort, story, standart);
         Fluss fluss = new Fluss(verabreitung, inventar, speicherort);
         Programm programm = new Programm(wald, dorf, burg, berg, bauerhof, fluss);
         programm.Runde();

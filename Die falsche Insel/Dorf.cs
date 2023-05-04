@@ -3,24 +3,26 @@
     private String _eingabe = null;
     private readonly Verabreitung _verarbeitung;
     private readonly Inventar _inventar;
+    private readonly Standard _standard;
 
 
 
-    public Dorf(Verabreitung verabreitung, Inventar inventar)
+    public Dorf(Verabreitung verabreitung, Inventar inventar, Standard standard)
     {
         _verarbeitung = verabreitung;
         _inventar = inventar;
+        _standard = standard;
     }
     public String DorfMain()
     {
-        Console.WriteLine("Wikommen im Dorf des Handels");
+        Console.WriteLine("Willkommen im Dorf des Handels");
         while (true)
         {
             Console.WriteLine("Sie können hier folgen Sachen machen:");
             Console.WriteLine("7. Reisen Wald");
             Console.WriteLine("8. Reisen Burg");
             Console.WriteLine("9. Reisen Bauernhof");
-            Console.WriteLine("0. Inverntar ausgeben lassen");
+            _standard.StandartEingabe0Wahl();
             _eingabe = Console.ReadLine();
             if ( _eingabe != null )
             {

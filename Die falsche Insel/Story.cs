@@ -15,7 +15,7 @@
             {
                 case 0:
                     Console.WriteLine("Hallo Guten Tag ich bin König Balduin und heisse Sie Herzlich Willkommen auf der Burg.");
-                    Console.WriteLine("Können Sie bitte mal in den Wald Reisen und dort Kräuter hollen ich habe ihrgend wie etwas falsch gegessen.");
+                    Console.WriteLine("Können Sie bitte mal in den Wald reisen und dort Kräuter hollen ich habe ihrgend wie etwas falsch gegessen.");
                     _speicherort.KoenigAugabenStuffe = 1;
                     break;
                 case 1:
@@ -35,7 +35,7 @@
                                 }
                                 break;
                             case "Nein":
-                                Console.WriteLine("Dann hollen Sie es bitte. Gehen sie über das Dorf in den Wald sammel nach einiger Zeit haben sie Kräuter in ihrem Bäutel.");
+                                Console.WriteLine("Dann hollen Sie es bitte. Gehen Sie über das Dorf in den Wald sammeln Sie, nach einiger Zeit haben Sie Kräuter in ihrem Beutel.");
                                 break;
                             default:
                                 Console.WriteLine("Sie können bei Aufgaben nur Ja oder Nein schreiben!");
@@ -69,24 +69,24 @@
             switch(_speicherort.BauerAufgabeStuffe)
             {
                 case 0:
-                    Console.WriteLine("Hallo Fremder wie kommt es zu den das Sie hier auf der insel der Ernte?");
-                    Console.WriteLine("Egal wie sie schon hier seit könnt ihr mir ein gefallen helfen?");
-                    Console.WriteLine("Könnte ihr mir bitte 1 Birne und 1 Apfel bringen?");
+                    Console.WriteLine("Hallo Fremder wie kommt es zu dem das Sie hier auf der Insel der Ernte?");
+                    Console.WriteLine("Egal wie Sie schon hier seit könnt ihr mir ein gefallen helfen?");
+                    Console.WriteLine("Könnten Sie mir bitte 1 Birne und 1 Apfel bringen?");
                     Console.WriteLine("Ich will eine Pause machen und habe keine Früchte");
                     _speicherort.BauerAufgabeStuffe++;
                     break;
                 case 1:
-                    Console.WriteLine("Oh sie sind zurück haben sie die Früchte?");
+                    Console.WriteLine("Oh Sie sind zurück haben sie die Früchte?");
                     eingabe = Console.ReadLine();
                     if (eingabe != null)
                     {
                         switch(eingabe)
                         {
                             case "Ja":
-                                Console.WriteLine("Zeigen sie mal her");
+                                Console.WriteLine("Zeigen Sie mal her");
                                 if(_speicherort.Apfel >= 1 && _speicherort.Birne >= 1)
                                 {
-                                    Console.WriteLine("Oh wie schön wiklich sehr frisch.");
+                                    Console.WriteLine("Oh wie schön wirklich sehr frisch.");
                                     _speicherort.Apfel = 0;
                                     _speicherort.Birne = 0;
                                     Console.WriteLine("Danke für die Früchte.");
@@ -96,7 +96,7 @@
                                 }
                                 else
                                 {
-                                    Console.WriteLine("Sie haben garkeit oder nur eine Frucht gepückt schauen sie nochmals in ihren Bäute nach was sie nicht haben und gehen sie das Ernten.");
+                                    Console.WriteLine("Sie haben garkeit oder nur eine Frucht gepückt schauen sie nochmals in ihren Beute nach was sie nicht haben und gehen sie das Ernten.");
                                 }
                                 break;
                             case "Nein":

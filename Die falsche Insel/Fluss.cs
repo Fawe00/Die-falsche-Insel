@@ -4,16 +4,18 @@
     private readonly Verabreitung _verarbeitung;
     private readonly Inventar _inventar;
     private readonly Speicherort _speicherort;
+    private readonly Standard _standard;
 
-    public Fluss(Verabreitung verabreitung, Inventar inventar, Speicherort speicherort)
+    public Fluss(Verabreitung verabreitung, Inventar inventar, Speicherort speicherort, Standard standard)
     {
         _verarbeitung = verabreitung;
         _inventar = inventar;
         _speicherort = speicherort;
+        _standard = standard;
     }
     public String FlussMain()
     {
-        Console.WriteLine("Wikommen auf der Insel des Flusses");
+        Console.WriteLine("Willkommen auf der Insel des Flusses");
         while (true)
         {
             Console.WriteLine("Sie können hier folgene Sachen machen");
@@ -27,9 +29,9 @@
             }
             else
             {
-                Console.WriteLine("9. Brücke Bauen");
+                Console.WriteLine("9. Brücke bauen");
             }
-            Console.WriteLine("0. Beutel Öffen");
+            _standard.StandartEingabe0Wahl();
             _eingabe = Console.ReadLine();
             switch (_eingabe)
             {
