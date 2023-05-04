@@ -76,7 +76,7 @@
                             }
                         }
                         break;
-                    case "8";
+                    case "8":
                         return "Fluss";
                     case "9":
                         return "Dorf";
