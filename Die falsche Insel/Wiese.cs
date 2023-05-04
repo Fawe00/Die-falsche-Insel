@@ -11,5 +11,9 @@
         _inventar = inventar;
         _speicherort = speicherort;
     }
-
+    public String WieseMain()
+    {
+        // Zuerst korigiren von allen dann weitermachen
+        return "Fluss";
+    }
 }
