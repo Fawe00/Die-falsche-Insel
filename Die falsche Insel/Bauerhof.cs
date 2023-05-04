@@ -21,6 +21,7 @@
             Console.WriteLine("Sie können hier folgen Sachen machen:");
             Console.WriteLine("1. Feldfrüchte ernten");
             Console.WriteLine("2. Obstbäume ernten");
+            Console.WriteLine("8. Reisen zum Fluss");
             Console.WriteLine("9. Reisen in das Dorf");
             Console.WriteLine("0. Inventar ausgeben lassen");
             if (_speicherort.BauerAufgabe == true)
@@ -75,6 +76,8 @@
                             }
                         }
                         break;
+                    case "8";
+                        return "Fluss";
                     case "9":
                         return "Dorf";
                     case "0":
