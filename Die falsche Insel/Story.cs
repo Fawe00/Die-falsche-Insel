@@ -1,11 +1,13 @@
 ﻿class Story
 {
     private readonly Speicherort _speicherort;
+    private readonly Verabreitung _verabreitung;
     private String eingabe;
 
-    public Story(Speicherort speicherort)
+    public Story(Speicherort speicherort, Verabreitung verabreitung)
     {
         _speicherort = speicherort;
+        _verabreitung = verabreitung;
     }
     public void KönigAufgaben()
     {
@@ -126,7 +128,22 @@
             switch (_speicherort.BrauerAufgabeStuffe)
             {
                 case 0:
-                    Console.WriteLine("Hallo Frembder wollt ihr ein kleinens Getränk für unterwegs haben?");
+                    Console.WriteLine("Hallo Fremder wollt ihr ein kleinens Getränk für unterwegs haben?");
+                    eingabe = Console.ReadLine();
+                    if (eingabe != null)
+                    {
+                        bool ft = _verabreitung.JaNeinGross(eingabe);
+                        if (ft)
+                        {
+                            Console.WriteLine("Gut hier bitte sehr.");
+                            _speicherort.Bier = 1;
+                            _speicherort.BrauerAufgabeStuffe++;
+
+                        } else
+                        {
+                            Console.WriteLine("Okay dann kommen Sie später nochmals.");
+                        }
+                    }    
                     // weitermachen
                     break;
             }

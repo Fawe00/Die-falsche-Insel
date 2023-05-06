@@ -4,10 +4,10 @@
     {
         Console.WriteLine("Das Program wird gestartet");
         Standard standard = new Standard();
-        Speicherort speicherort = new Speicherort(1000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+        Speicherort speicherort = new Speicherort(1000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
         Inventar inventar = new Inventar(speicherort);
         Verabreitung verabreitung = new Verabreitung(speicherort);
-        Story story = new Story(speicherort);
+        Story story = new Story(speicherort, verabreitung);
         Essen essen = new Essen(speicherort);
         Wald wald = new Wald(verabreitung, inventar, standard);
         Dorf dorf = new Dorf(verabreitung, inventar, standard);

@@ -11,6 +11,7 @@
         Console.WriteLine("Energie:" + _speicherort.Energie);
         Console.WriteLine("Apfel: " + _speicherort.Apfel);
         Console.WriteLine("Birne: " + _speicherort.Birne);
+        Console.WriteLine("Bier:" + _speicherort.Bier);
         Console.WriteLine("Baumstamm:" + _speicherort.Baumstamm);
         Console.WriteLine("Beutel: " + _speicherort.Beutel);
         Console.WriteLine("Fiegenpilz:" + _speicherort.Fliegenpilz);

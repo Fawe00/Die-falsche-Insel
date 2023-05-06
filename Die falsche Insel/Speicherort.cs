@@ -7,6 +7,7 @@
     //Material
     private int apfel;
     private int birne;
+    private int bier;
     private int baumstamm;
     private int beutel;
     private int fliegenpilz;
@@ -37,6 +38,7 @@
     public int Energie { get => energie; set => energie = value; }
     public int Apfel { get => apfel; set => apfel = value; }
     public int Birne { get => birne; set => birne = value; }
+    public int Bier { get => bier; set => bier = value; }
     public int Baumstamm { get => baumstamm; set => baumstamm = value;}
     public int Beutel { get => beutel; set => beutel = value; }
     public int Fliegenpilz { get => fliegenpilz; set => fliegenpilz = value;}
@@ -57,11 +59,12 @@
     public int BauerAufgabeStuffe { get => bauerAufbabenStuffe; set => bauerAufbabenStuffe = value;}
     public bool BrauerAufgabe { get => brauerAufgabeErhalten; set => brauerAufgabeErhalten = value;}
     public int BrauerAufgabeStuffe { get => brauerAufgabeStuffe; set => brauerAufgabeStuffe = value;}
-    public Speicherort(int energie,int apfel, int birne, int beutel, int baumstamm, int fliegenpilz, int karotten, int kartoffeln, int kraut, int lehm, int pilz, int stein, int stock, int wasserbeutel)
+    public Speicherort(int energie,int apfel, int birne,int bier, int beutel, int baumstamm, int fliegenpilz, int karotten, int kartoffeln, int kraut, int lehm, int pilz, int stein, int stock, int wasserbeutel)
     {
         Energie = energie;
         Apfel = apfel;
         Birne = birne;
+        Bier = bier;
         Beutel = beutel;
         Baumstamm = baumstamm;
         Fliegenpilz = fliegenpilz;
