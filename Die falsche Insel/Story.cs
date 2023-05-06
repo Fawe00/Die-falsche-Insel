@@ -146,6 +146,24 @@
                     }    
                     // weitermachen
                     break;
+                case 1:
+                    Console.WriteLine("Und wie war es?");
+                    Console.WriteLine("Der gertige geschmakt macht es fast einzigartig.");
+                    Console.WriteLine("Ich würde dies gern mehr herstellen doch ich habe hier fast kein platz zu bauen.");
+                    Console.WriteLine("Haben Sie ein ort wo sie das machen könnten für mich?");
+                    eingabe = Console.ReadLine();
+                    if (eingabe != null) 
+                    {
+                        bool ft = _verabreitung.JaNeinGross(eingabe);
+                        if (ft)
+                        {
+                            Console.WriteLine("Okay sie brach volgen sachen für dies aufgabe");
+                            Console.WriteLine("Stein: 20");
+                            Console.WriteLine("Baumstämme: 14");
+                            Console.WriteLine("Ziegel: 25");
+                            
+                        }else { Console.WriteLine("Wie schade gut bitte der nächste"); }
+                    }
             }
         }
     }
