@@ -20,6 +20,9 @@
     private int stein;
     private int stock;
     private int wasserBeutel;
+    private int ziegel;
+    //Werkzeug
+    private bool axt = false;
     //Bauen
     private bool brueckeFluss = false;
 
@@ -34,6 +37,9 @@
     //Brauer
     private bool brauerAufgabeErhalten = false;
     private int brauerAufgabeStuffe = 0;
+    //Schmied
+    private bool schmiedAufgabeErhalten = false;
+    private int schmiedAufgabeStuffe = 0;
 
     public int Energie { get => energie; set => energie = value; }
     public int Apfel { get => apfel; set => apfel = value; }
@@ -51,6 +57,10 @@
     public int Stein { get =>  stein; set => stein = value;}
     public int Stock { get => stock; set => stock = value;}
     public int WasserBeutel { get => wasserBeutel; set => stock = value; }
+    public int Ziegel { get => ziegel; set => ziegel = value; }
+
+    public bool Axt { get => axt; set => axt = value; }
+
     public bool Brueckefluss { get => brueckeFluss; set => brueckeFluss = value; }
 
     public bool KoenigAufgabe { get => koenigAugabeErhaeltlich; set => koenigAugabeErhaeltlich = value;}
@@ -59,6 +69,8 @@
     public int BauerAufgabeStuffe { get => bauerAufbabenStuffe; set => bauerAufbabenStuffe = value;}
     public bool BrauerAufgabe { get => brauerAufgabeErhalten; set => brauerAufgabeErhalten = value;}
     public int BrauerAufgabeStuffe { get => brauerAufgabeStuffe; set => brauerAufgabeStuffe = value;}
+    public bool SchmiedAufgabe { get => schmiedAufgabeErhalten; set => schmiedAufgabeErhalten = value;}
+    public int SchmiedAufgabeStuffe { get => schmiedAufgabeStuffe; set => schmiedAufgabeStuffe = value;}
     public Speicherort(int energie,int apfel, int birne,int bier, int beutel, int baumstamm, int fliegenpilz, int karotten, int kartoffeln, int kraut, int lehm, int pilz, int stein, int stock, int wasserbeutel)
     {
         Energie = energie;
