@@ -119,4 +119,17 @@
             Console.WriteLine("Der Bauer hat keine Aufgabe für Sie.");
         }
     }
+    public void BrauerAufgaben()
+    {
+        if(_speicherort.BrauerAufgabe)
+        {
+            switch (_speicherort.BrauerAufgabeStuffe)
+            {
+                case 0:
+                    Console.WriteLine("Hallo Frembder wollt ihr ein kleinens Getränk für unterwegs haben?");
+                    // weitermachen
+                    break;
+            }
+        }
+    }
 }
