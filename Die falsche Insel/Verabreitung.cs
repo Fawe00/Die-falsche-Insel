@@ -12,12 +12,16 @@
     {
         int energie = _speicherort.Energie;
         int baumstamm = _speicherort.Baumstamm;
-        if (energie >= 5)
+        if (energie >= 5 && _speicherort.Axt)
         {
             energie -= 5;
             baumstamm++;
             _speicherort.Energie = energie;
             _speicherort.Baumstamm = baumstamm;
+        }
+        else
+        {
+            Console.WriteLine("Sie haben zu wenig Energie oder keine Axt.");
         }
     }
     public void SammelnImWald()
