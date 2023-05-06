@@ -17,6 +17,7 @@
             Console.WriteLine("1. Apfel");
             Console.WriteLine("2. Birne");
             Console.WriteLine("3. Karotte");
+            Console.WriteLine("4. Bier");
             eingabe = Console.ReadLine();
             if (eingabe != null)
             {
@@ -30,6 +31,9 @@
                         break;
                     case "3":
                         EssenKarotte();
+                        break;
+                    case "4":
+                        EssenBier();
                         break;
                     default:
                         Console.WriteLine("Diese Nummer ist nicht Existent.");
@@ -85,6 +89,22 @@
         else
         {
             Console.WriteLine("Sie haben zu wenig Birnen.");
+        }
+    }
+    private void EssenBier()
+    {
+        int bier = _speicherort.Bier;
+        int energie = _speicherort.Energie;
+        if(bier >= 1)
+        {
+            bier--;
+            energie += 15;
+            _speicherort.Bier = bier;
+            _speicherort.Energie = energie;
+        }
+        else
+        {
+            Console.WriteLine("Sie haben zu wenig Bier.");
         }
     }
 }
