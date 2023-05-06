@@ -38,7 +38,7 @@
                         _inventar.InventarAusagabe();
                         break;
                     default:
-                        Console.WriteLine("Die Angabe stimmt nicht überein.");
+                        _standard.StandartFalscheEingabe();
                         break;
                 }
             }
