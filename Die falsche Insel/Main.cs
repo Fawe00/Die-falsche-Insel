@@ -10,7 +10,7 @@
         Story story = new Story(speicherort, verabreitung);
         Essen essen = new Essen(speicherort);
         Wald wald = new Wald(verabreitung, inventar, standard);
-        Dorf dorf = new Dorf(verabreitung, inventar, standard);
+        Dorf dorf = new Dorf(verabreitung, inventar, standard, speicherort, story);
         Burg burg = new Burg(verabreitung, inventar, speicherort, story, essen, standard);
         Berg berg = new Berg(verabreitung, inventar, standard);
         Bauerhof bauerhof = new Bauerhof(verabreitung, inventar, speicherort, story, standard);

@@ -4,14 +4,18 @@
     private readonly Verabreitung _verarbeitung;
     private readonly Inventar _inventar;
     private readonly Standard _standard;
+    private readonly Speicherort _speicherort;
+    private readonly Story _story;
 
 
 
-    public Dorf(Verabreitung verabreitung, Inventar inventar, Standard standard)
+    public Dorf(Verabreitung verabreitung, Inventar inventar, Standard standard, Speicherort speicherort, Story story)
     {
         _verarbeitung = verabreitung;
         _inventar = inventar;
         _standard = standard;
+        _speicherort = speicherort;
+        _story = story;
     }
     public String DorfMain()
     {
@@ -23,6 +27,14 @@
             Console.WriteLine("8. Reisen Burg");
             Console.WriteLine("9. Reisen Bauernhof");
             _standard.StandartEingabe0Wahl();
+            if (_speicherort.BrauerAufgabe)
+            {
+                Console.WriteLine("B. Brauer");
+            }
+            if( _speicherort.SchmiedAufgabe)
+            {
+                Console.WriteLine("S. Schmied");
+            }
             _eingabe = Console.ReadLine();
             if ( _eingabe != null )
             {
@@ -36,6 +48,12 @@
                         return "Bauernhof";
                     case "0":
                         _inventar.InventarAusagabe();
+                        break;
+                    case "B":
+                        _story.BrauerAufgaben();
+                        break;
+                    case "S":
+                        _story.SchmiedAufgabe();
                         break;
                     default:
                         _standard.StandartFalscheEingabe();
