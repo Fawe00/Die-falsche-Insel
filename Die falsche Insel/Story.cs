@@ -164,6 +164,7 @@
                             
                         }else { Console.WriteLine("Wie schade gut bitte der nächste"); }
                     }
+                    break;
             }
         }
     }
