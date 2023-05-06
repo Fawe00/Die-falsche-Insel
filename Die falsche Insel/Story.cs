@@ -49,7 +49,8 @@
                     Console.WriteLine("Oh ich habe gehört das Sie den Bauer angetroffen haben und im geholfen haben");
                     Console.WriteLine("Wenn Sie ein Platz zum Wohen brachen hinter den Fluss auf der Wiese hat es noch Platz für ein Haus");
                     Console.WriteLine("Natürlich können sie sich auch ein Zimmer im Dorf mieten oder im Wald vor einen Lagerfuer schlafen");
-                    Console.WriteLine("Geht das für sie so in Ortnung.");
+                    Console.WriteLine("Geht das  sicher für Sie so in Ortnung.");
+                    _speicherort.BrauerAufgabe = true;
                     break;
                 case 3:
 
@@ -165,6 +166,22 @@
                         }else { Console.WriteLine("Wie schade gut bitte der nächste"); }
                     }
                     break;
+            }
+        }
+    }
+    public void SchmiedAufgabe()
+    {
+        if (_speicherort.SchmiedAufgabe)
+        {
+            switch (_speicherort.SchmiedAufgabeStuffe)
+            {
+                case 0:
+                    Console.WriteLine("Hallo Fremder ich würde mich auch gerne mal vorstellen.");
+                    Console.WriteLine("Ich bin Ramon der Schmied und mach mein Handwerk mit Leidenschat ud Stolz.");
+                    Console.WriteLine("Hier ein geschenk eine neue Axt das sie besser Holz hacken können.");
+                    _speicherort.Axt = true;
+                    break;
+
             }
         }
     }
