@@ -145,7 +145,6 @@
                             Console.WriteLine("Okay dann kommen Sie später nochmals.");
                         }
                     }    
-                    // weitermachen
                     break;
                 case 1:
                     Console.WriteLine("Und wie war es?");
@@ -177,7 +176,7 @@
             {
                 case 0:
                     Console.WriteLine("Hallo Fremder ich würde mich auch gerne mal vorstellen.");
-                    Console.WriteLine("Ich bin Ramon der Schmied und mach mein Handwerk mit Leidenschat ud Stolz.");
+                    Console.WriteLine("Ich bin Ramon der Schmied und mach mein Handwerk mit Leidenschat und Stolz.");
                     Console.WriteLine("Hier ein Geschenk eine neue Axt das sie besser Holz hacken können.");
                     _speicherort.Axt = true;
                     break;
