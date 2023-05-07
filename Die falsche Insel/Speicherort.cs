@@ -23,6 +23,7 @@
     private int ziegel;
     //Werkzeug
     private bool axt = false;
+    private bool sage = false;
     //Bauen
     private bool brueckeFluss = false;
 
@@ -40,6 +41,9 @@
     //Schmied
     private bool schmiedAufgabeErhalten = false;
     private int schmiedAufgabeStuffe = 0;
+    //Ziegler
+    private bool zieglerAufgabeErhalten = false;
+    private int zieglerAufgabeStuffe = 0;
 
     public int Energie { get => energie; set => energie = value; }
     public int Apfel { get => apfel; set => apfel = value; }
@@ -60,6 +64,7 @@
     public int Ziegel { get => ziegel; set => ziegel = value; }
 
     public bool Axt { get => axt; set => axt = value; }
+    public bool Sage { get => sage; set => sage = value; }
 
     public bool Brueckefluss { get => brueckeFluss; set => brueckeFluss = value; }
 
@@ -71,6 +76,8 @@
     public int BrauerAufgabeStuffe { get => brauerAufgabeStuffe; set => brauerAufgabeStuffe = value;}
     public bool SchmiedAufgabe { get => schmiedAufgabeErhalten; set => schmiedAufgabeErhalten = value;}
     public int SchmiedAufgabeStuffe { get => schmiedAufgabeStuffe; set => schmiedAufgabeStuffe = value;}
+    public bool ZieglerAufgabe { get => zieglerAufgabeErhalten; set => zieglerAufgabeErhalten = value;}
+    public int ZieglerAufgabeStuffe { get => zieglerAufgabeStuffe; set => zieglerAufgabeStuffe = value;}
     public Speicherort(int energie,int apfel, int birne,int bier, int beutel, int baumstamm, int fliegenpilz, int karotten, int kartoffeln, int kraut, int lehm, int pilz, int stein, int stock, int wasserbeutel)
     {
         Energie = energie;

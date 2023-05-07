@@ -179,8 +179,53 @@
                     Console.WriteLine("Ich bin Ramon der Schmied und mach mein Handwerk mit Leidenschat und Stolz.");
                     Console.WriteLine("Hier ein Geschenk eine neue Axt das sie besser Holz hacken können.");
                     _speicherort.Axt = true;
+                    _speicherort.SchmiedAufgabe = false;
+                    break;
+                case 1:
+                    Console.WriteLine("Oh Sie haben ein schreiben von Ziegler.");
+                    Console.WriteLine("Natürlich kann ich ihnen ein Säge geben.");
+                    Console.WriteLine("Hier ist sie bitte sehr");
+                    _speicherort.Sage = true;
+                    _speicherort.SchmiedAufgabe = false;
                     break;
 
+            }
+        }
+    }
+    public void ZieglerAufgabe()
+    {
+        if(_speicherort.ZieglerAufgabe)
+        {
+            switch (_speicherort.ZieglerAufgabeStuffe)
+            {
+                case 0:
+                    Console.WriteLine("Hallo du siehst ja aus als könnte du mir helfen ich mache für meine Ziegel aller Art doch leider ist mir das Holz ausgegangen.");
+                    Console.WriteLine("Könntest du mir mal was bringen dann zeige ich dir wie das geht.");
+                    _speicherort.ZieglerAufgabeStuffe = 1;
+                    break;
+                case 1:
+                    Console.WriteLine("Haben sie das Holz?");
+                    eingabe = Console.ReadLine();
+                    bool ft = _verabreitung.JaNeinGross(eingabe);
+                    if (ft)
+                    {
+                        if(_speicherort.Baumstamm >= 1)
+                        {
+                            Console.WriteLine("Okay das ist aber ein bisschen sehr langes Holzstücke hast du eine Säge zum das kleiner zu machen?");
+                            eingabe = Console.ReadLine();
+                            if (_verabreitung.JaNeinGross(eingabe))
+                            {
+                                Console.WriteLine("Okay dann komm mich nochmals später besuchen");
+                                //Weitemachen
+                                break;
+                            }else
+                            {
+                                Console.WriteLine("Okay ich gebe dir ein Schreiben mir das du bei Schmied eine Säge bekommst.");
+                                break;
+                            }
+                        }
+                    }
+                    break;
             }
         }
     }
