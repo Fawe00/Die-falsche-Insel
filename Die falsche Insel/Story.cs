@@ -158,7 +158,7 @@
                         bool ft = _verabreitung.JaNeinGross(eingabe);
                         if (ft)
                         {
-                            Console.WriteLine("Okay sie brach volgen sachen für dies aufgabe");
+                            Console.WriteLine("Okay sie brache folgen Sachen für diese Aufgabe");
                             Console.WriteLine("Stein: 20");
                             Console.WriteLine("Baumstämme: 14");
                             Console.WriteLine("Ziegel: 25");
@@ -178,7 +178,7 @@
                 case 0:
                     Console.WriteLine("Hallo Fremder ich würde mich auch gerne mal vorstellen.");
                     Console.WriteLine("Ich bin Ramon der Schmied und mach mein Handwerk mit Leidenschat ud Stolz.");
-                    Console.WriteLine("Hier ein geschenk eine neue Axt das sie besser Holz hacken können.");
+                    Console.WriteLine("Hier ein Geschenk eine neue Axt das sie besser Holz hacken können.");
                     _speicherort.Axt = true;
                     break;
 
