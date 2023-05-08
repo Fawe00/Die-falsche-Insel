@@ -167,6 +167,10 @@
                     break;
             }
         }
+        else
+        {
+            Console.WriteLine("Der Brauer hat keine Aufgabe für Sie.");
+        }
     }
     public void SchmiedAufgabe()
     {
@@ -216,7 +220,14 @@
                             if (_verabreitung.JaNeinGross(eingabe))
                             {
                                 Console.WriteLine("Okay dann komm mich nochmals später besuchen");
-                                //Weitemachen
+                                if (_speicherort.Sage)
+                                {
+                                    _speicherort.ZieglerAufgabeStuffe++;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("ErrorE: Sie haben keine Säge im Beutel.");
+                                }
                                 break;
                             }else
                             {
@@ -227,6 +238,10 @@
                     }
                     break;
             }
+        }
+        else
+        {
+            Console.WriteLine("Der Ziegler hat keine Aufgabe für Sie.");
         }
     }
 }
