@@ -167,8 +167,54 @@
         _speicherort.Energie = energie;
         _speicherort.Sand = sand;
     }
-    
-
+    public void HolzSagen()
+    {
+        int energie = _speicherort.Energie;
+        int holzstucke = _speicherort.Holzstuck;
+        int baumstamm = _speicherort.Baumstamm;
+        if(energie >= 4)
+        {
+            holzstucke += 4;
+            energie -= 4;
+            baumstamm--;
+        }
+        _speicherort.Baumstamm = baumstamm;
+        _speicherort.Energie = energie;
+        _speicherort.Holzstuck = holzstucke;
+    }
+    public void HolzSpalten()
+    {
+        int energie = _speicherort.Energie;
+        int holzstucke = _speicherort.Holzstuck;
+        int holzscheite = _speicherort.Holzscheite;
+        if(energie >= 7)
+        {
+            energie -= 7;
+            holzstucke--;
+            holzscheite += 8;
+        }
+        _speicherort.Energie = energie;
+        _speicherort.Holzscheite = holzscheite;
+        _speicherort.Holzstuck = holzstucke;
+    }
+    public void ZiegelHerstellen()
+    {
+        int energie = _speicherort.Energie;
+        int ziegel = _speicherort.Ziegel;
+        int holzscheite = _speicherort.Holzscheite;
+        int lehm = _speicherort.Lehm;
+        if(energie >= 2)
+        {
+            energie -= 2;
+            lehm -= 2;
+            holzscheite -= 5;
+            ziegel--;
+        }
+        _speicherort.Energie = energie;
+        _speicherort.Ziegel = ziegel;
+        _speicherort.Lehm = lehm;
+        _speicherort.Holzscheite = holzscheite;
+    }
 
     // Bauen von Objekten
     public void BauenBruecke()

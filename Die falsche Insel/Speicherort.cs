@@ -11,6 +11,8 @@
     private int baumstamm;
     private int beutel;
     private int fliegenpilz;
+    private int holzscheite;
+    private int holzstucke;
     private int karotten;
     private int kartoffeln;
     private int kraut;
@@ -45,6 +47,9 @@
     private bool zieglerAufgabeErhalten = false;
     private int zieglerAufgabeStuffe = 0;
 
+    //Produktionen
+    private bool ziegelHerstellen = false;
+
     public int Energie { get => energie; set => energie = value; }
     public int Apfel { get => apfel; set => apfel = value; }
     public int Birne { get => birne; set => birne = value; }
@@ -52,6 +57,8 @@
     public int Baumstamm { get => baumstamm; set => baumstamm = value;}
     public int Beutel { get => beutel; set => beutel = value; }
     public int Fliegenpilz { get => fliegenpilz; set => fliegenpilz = value;}
+    public int Holzscheite { get => holzscheite; set => holzscheite = value; }
+    public int Holzstuck { get => holzstucke; set => holzstucke = value; }
     public int Karotten { get => karotten; set => karotten = value;}
     public int Kartoffeln { get => kartoffeln; set => kartoffeln = value;}
     public int Kraut { get => kraut; set => kraut = value;}
@@ -78,6 +85,8 @@
     public int SchmiedAufgabeStuffe { get => schmiedAufgabeStuffe; set => schmiedAufgabeStuffe = value;}
     public bool ZieglerAufgabe { get => zieglerAufgabeErhalten; set => zieglerAufgabeErhalten = value;}
     public int ZieglerAufgabeStuffe { get => zieglerAufgabeStuffe; set => zieglerAufgabeStuffe = value;}
+
+    public bool ZiegelHerstellen { get => ziegelHerstellen; set => ziegelHerstellen = value;}
     public Speicherort(int energie,int apfel, int birne,int bier, int beutel, int baumstamm, int fliegenpilz, int karotten, int kartoffeln, int kraut, int lehm, int pilz, int stein, int stock, int wasserbeutel)
     {
         Energie = energie;

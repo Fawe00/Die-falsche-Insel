@@ -23,6 +23,10 @@
         while (true)
         {
             Console.WriteLine("Sie können hier folgen Sachen machen:");
+            if (_speicherort.ZiegelHerstellen)
+            {
+                Console.WriteLine("Zeigel herstellen");
+            }
             Console.WriteLine("7. Reisen Wald");
             Console.WriteLine("8. Reisen Burg");
             Console.WriteLine("9. Reisen Bauernhof");
@@ -55,6 +59,12 @@
                     case "S":
                         _story.SchmiedAufgabe();
                         break;
+                    case "1":
+                        if (_speicherort.ZiegelHerstellen)
+                        {
+                            _verarbeitung.ZiegelHerstellen();
+                            break;
+                        }
                     default:
                         _standard.StandartFalscheEingabe();
                         break;

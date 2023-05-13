@@ -232,11 +232,39 @@
                             }else
                             {
                                 Console.WriteLine("Okay ich gebe Ihnen ein Schreiben, das Sie bei Schmied eine Säge bekommst.");
+                                _speicherort.SchmiedAufgabe = true;
+                                _speicherort.SchmiedAufgabeStuffe = 2;
+                                _speicherort.ZieglerAufgabeStuffe++;
                                 break;
                             }
                         }
                     }
                     break;
+                case 2:
+                    if (_speicherort.Sage)
+                    {
+                        Console.WriteLine("Oh Sie haben die Säge gut.");
+                        Console.WriteLine("Dann Sägen sie bitte die mal in 4 Teile.");
+                        _verabreitung.HolzSagen();
+                        if(7 == _speicherort.Holzstuck)
+                        {
+                            Console.WriteLine("Okay und jetzt noch Hacken");
+                            _verabreitung.HolzSpalten();    
+                        }
+                        if(8 == _speicherort.Holzscheite)
+                        {
+                            Console.WriteLine("Ah danke jetzt können Sie bei mir immer 2 Lehm und 5 Holzscheite.");
+                            Console.WriteLine("Bei mir Ziegle brennen.");
+                            _speicherort.ZieglerAufgabe = false;
+                            _speicherort.ZiegelHerstellen = true;
+                        }
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Sie haben noch nicht die Sage gehen sie zum Schmied die hollen.");
+                        break;
+                    }
             }
         }
         else
