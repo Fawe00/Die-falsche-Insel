@@ -203,8 +203,8 @@
             switch (_speicherort.ZieglerAufgabeStuffe)
             {
                 case 0:
-                    Console.WriteLine("Hallo du siehst ja aus als könnte du mir helfen ich mache für meine Ziegel aller Art doch leider ist mir das Holz ausgegangen.");
-                    Console.WriteLine("Könntest du mir mal was bringen dann zeige ich dir wie das geht.");
+                    Console.WriteLine("Hallo Sie, Sie siehen ja aus als könnte Sie mir helfen ich mache für meine Ziegel aller Art doch leider ist mir das Holz ausgegangen.");
+                    Console.WriteLine("Könnten Sie mir mal was bringen dann zeige ich Ihnen wie das geht.");
                     _speicherort.ZieglerAufgabeStuffe = 1;
                     break;
                 case 1:
@@ -226,12 +226,12 @@
                                 }
                                 else
                                 {
-                                    Console.WriteLine("ErrorE: Sie haben keine Säge im Beutel.");
+                                    Console.WriteLine("ErrorErlichkeit: Sie haben keine Säge im Beutel.");
                                 }
                                 break;
                             }else
                             {
-                                Console.WriteLine("Okay ich gebe dir ein Schreiben mir das du bei Schmied eine Säge bekommst.");
+                                Console.WriteLine("Okay ich gebe Ihnen ein Schreiben, das Sie bei Schmied eine Säge bekommst.");
                                 break;
                             }
                         }
