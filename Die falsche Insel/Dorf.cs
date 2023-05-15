@@ -22,7 +22,7 @@
         Console.WriteLine("Willkommen im Dorf des Handels");
         while (true)
         {
-            Console.WriteLine("Sie können hier folgen Sachen machen:");
+            _standard.StardartInselnWahl();
             if (_speicherort.ZiegelHerstellen)
             {
                 Console.WriteLine("Zeigel herstellen");
@@ -65,6 +65,7 @@
                             _verarbeitung.ZiegelHerstellen();
                             break;
                         }
+                        break;
                     default:
                         _standard.StandartFalscheEingabe();
                         break;
