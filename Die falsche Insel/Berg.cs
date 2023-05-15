@@ -18,7 +18,7 @@
         Console.WriteLine("Wikommen auf dem Berg");
         while (true)
         {
-            Console.WriteLine("Sie können hier folgen Sachen machen:");
+            _standard.StardartInselnWahl();
             Console.WriteLine("1. Stein abbauen");
             Console.WriteLine("9. Reisen Wald");
             _standard.StandartEingabe0Wahl();

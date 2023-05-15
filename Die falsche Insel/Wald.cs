@@ -17,7 +17,7 @@
         Console.WriteLine("Willkommen auf der Insel des Waldes");
         while (true)
         {
-            Console.WriteLine("Sie können hier folgen Sachen machen:");
+            _standard.StardartInselnWahl();
             Console.WriteLine("1. Baum fällen");
             Console.WriteLine("2. Material vom Boden aufsammeln");
             Console.WriteLine("9. Reisen in das Dorf");

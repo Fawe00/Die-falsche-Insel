@@ -24,7 +24,7 @@
         Console.WriteLine("Willkommen im Dorf des Handels");
         while (true)
         {
-            Console.WriteLine("Sie können hier folgen Sachen machen:");
+            _standard.StardartInselnWahl();
             Console.WriteLine("1. Essen im Speisesaal");
             Console.WriteLine("9. Reisen Dorf");
             _standard.StandartEingabe0Wahl();

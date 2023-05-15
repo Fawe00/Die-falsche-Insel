@@ -18,7 +18,7 @@
         Console.WriteLine("Willkommen auf der Insel des Flusses");
         while (true)
         {
-            Console.WriteLine("Sie können hier folgene Sachen machen");
+            _standard.StardartInselnWahl();
             Console.WriteLine("1. Beutel mit Wasser füllen");
             Console.WriteLine("2. Lehm stechen");
             Console.WriteLine("3. Sand nehmen");

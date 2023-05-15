@@ -20,7 +20,7 @@
         Console.WriteLine("Willkommen auf dem Bauerhof der Ernte");
         while (true)
         {
-            Console.WriteLine("Sie können hier folgen Sachen machen:");
+            _standart.StardartInselnWahl();
             Console.WriteLine("1. Feldfrüchte ernten");
             Console.WriteLine("2. Obstbäume ernten");
             Console.WriteLine("8. Reisen zum Fluss");

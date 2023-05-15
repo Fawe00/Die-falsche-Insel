@@ -9,4 +9,8 @@
     {
         Console.WriteLine("0. Beute öffen");
     }
+    public void StardartInselnWahl()
+    {
+        Console.WriteLine("Sie können flogende Sachen tun:");
+    }
 }
