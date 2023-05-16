@@ -25,7 +25,7 @@
             _standard.StardartInselnWahl();
             if (_speicherort.ZiegelHerstellen)
             {
-                Console.WriteLine("Zeigel herstellen");
+                Console.WriteLine("1. Ziegel herstellen");
             }
             Console.WriteLine("7. Reisen Wald");
             Console.WriteLine("8. Reisen Burg");
@@ -39,6 +39,7 @@
             {
                 Console.WriteLine("S. Schmied");
             }
+            _standard.StardartIhrWahlEingabe();
             _eingabe = Console.ReadLine();
             if ( _eingabe != null )
             {
