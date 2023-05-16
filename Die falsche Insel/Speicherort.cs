@@ -1,6 +1,6 @@
 ﻿class Speicherort
 {
-    //Algemein
+    //Allgemein
     private int energie;
 
 
@@ -47,7 +47,7 @@
     private bool zieglerAufgabeErhalten = false;
     private int zieglerAufgabeStuffe = 0;
 
-    //Produktionen
+    //Produktion
     private bool ziegelHerstellen = false;
 
     public int Energie { get => energie; set => energie = value; }

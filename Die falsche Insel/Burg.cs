@@ -26,11 +26,11 @@
         {
             _standard.StardartInselnWahl();
             Console.WriteLine("1. Essen im Speisesaal");
-            Console.WriteLine("9. Reisen Dorf");
+            Console.WriteLine("9. Reise auf die Insel des Dorfes");
             _standard.StandartEingabe0Wahl();
             if ( _speicherort.KoenigAufgabe == true )
             {
-                Console.WriteLine("K. Mit dem König reden");
+                Console.WriteLine("K. Mit dem König sprechen");
             }
             _standard.StardartIhrWahlEingabe();
             _eingabe = Console.ReadLine();

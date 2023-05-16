@@ -1,11 +1,13 @@
 ﻿class Essen
 {
     private readonly Speicherort _speicherort;
+    private readonly Standard _standard;
     private string eingabe;
 
-    public Essen(Speicherort speicherort)
+    public Essen(Speicherort speicherort, Standard standard)
     {
         _speicherort = speicherort;
+        _standard = standard;
     }
 
     public void Saal()
@@ -13,7 +15,7 @@
         int energie = _speicherort.Energie;
         if (energie <= 100)
         {
-            Console.WriteLine("Was wollen Sie den essen?");
+            Console.WriteLine("Was wollen Sie essen?");
             Console.WriteLine("1. Apfel");
             Console.WriteLine("2. Birne");
             Console.WriteLine("3. Karotte");
@@ -36,7 +38,7 @@
                         EssenBier();
                         break;
                     default:
-                        Console.WriteLine("Diese Nummer ist nicht Existent.");
+                        _standard.StandartFalscheEingabe();
                         break;
 
                 }
@@ -56,7 +58,7 @@
         }
         else
         {
-            Console.WriteLine("Sie haben zu wenige Karrotten.");
+            Console.WriteLine("Sie haben zu wenige Karotten.");
         }
     }
     public void EssenApfel()

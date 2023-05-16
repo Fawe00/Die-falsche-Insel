@@ -22,13 +22,13 @@
         {
             _standart.StardartInselnWahl();
             Console.WriteLine("1. Feldfrüchte ernten");
-            Console.WriteLine("2. Obstbäume ernten");
+            Console.WriteLine("2. Obst ernten");
             Console.WriteLine("8. Reisen zum Fluss");
-            Console.WriteLine("9. Reisen in das Dorf");
+            Console.WriteLine("9. Reisen ins Dorf");
             _standart.StandartEingabe0Wahl();
             if (_speicherort.BauerAufgabe == true)
             {
-                Console.WriteLine("B. Mit dem Bauer reden");
+                Console.WriteLine("B. Mit dem Bauer sprechen");
             }
             _standart.StardartIhrWahlEingabe();
             _eingabe = Console.ReadLine();

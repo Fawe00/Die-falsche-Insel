@@ -2,13 +2,13 @@
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("Das Program wird gestartet");
+        Console.WriteLine("Das Programm wird gestartet");
         Standard standard = new Standard();
         Speicherort speicherort = new Speicherort(1000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
         Inventar inventar = new Inventar(speicherort);
         Verabreitung verabreitung = new Verabreitung(speicherort);
         Story story = new Story(speicherort, verabreitung);
-        Essen essen = new Essen(speicherort);
+        Essen essen = new Essen(speicherort, standard);
         Wald wald = new Wald(verabreitung, inventar, standard);
         Dorf dorf = new Dorf(verabreitung, inventar, standard, speicherort, story);
         Burg burg = new Burg(verabreitung, inventar, speicherort, story, essen, standard);

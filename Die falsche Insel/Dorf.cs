@@ -27,9 +27,9 @@
             {
                 Console.WriteLine("1. Ziegel herstellen");
             }
-            Console.WriteLine("7. Reisen Wald");
-            Console.WriteLine("8. Reisen Burg");
-            Console.WriteLine("9. Reisen Bauernhof");
+            Console.WriteLine("7. Reise auf die Insel des Waldes");
+            Console.WriteLine("8. Reise auf die Insel der Burg");
+            Console.WriteLine("9. Reise auf die Insel des Bauernhofes");
             _standard.StandartEingabe0Wahl();
             if (_speicherort.BrauerAufgabe)
             {

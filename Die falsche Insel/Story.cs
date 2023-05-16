@@ -16,12 +16,12 @@
             switch (_speicherort.KoenigAugabenStuffe)
             {
                 case 0:
-                    Console.WriteLine("Hallo Guten Tag ich bin König Balduin und heisse Sie Herzlich Willkommen auf der Burg.");
-                    Console.WriteLine("Können Sie bitte mal in den Wald reisen und dort Kräuter hollen ich habe ihrgend wie etwas falsch gegessen.");
+                    Console.WriteLine("Hallo, guten Tag ich bin König Balduin und heisse Sie herzlich Willkommen auf der Burg.");
+                    Console.WriteLine("Können Sie bitte mal in den Wald reisen und dort Kräuter sammeln, ich habe etwas falsch gegessen.");
                     _speicherort.KoenigAugabenStuffe = 1;
                     break;
                 case 1:
-                    Console.WriteLine("Haben Sie die Kräuter?");
+                    Console.WriteLine("Haben Sie die Kräuter gesammelt?");
                     eingabe = Console.ReadLine();
                     if (eingabe != null)
                     {
@@ -31,32 +31,33 @@
                                 if (_speicherort.Kraut >= 1)
                                 {
                                     _speicherort.Kraut = 0;
-                                    Console.WriteLine("Danke für die Kräuter egal wie viele es waren, ich mache mir mal ein Tee, Sie können jetzt machen was sie wollen.");
+                                    Console.WriteLine("Danke für die vielen Kräuter, ich braue mir nun daraus einen Tee.");
+                                    Console.WriteLine("Sie haben jetzt Freizeit.");
                                     _speicherort.KoenigAufgabe = false;
                                     _speicherort.KoenigAugabenStuffe++;
                                 }
                                 break;
                             case "Nein":
-                                Console.WriteLine("Dann hollen Sie es bitte. Gehen Sie über das Dorf in den Wald sammeln Sie, nach einiger Zeit haben Sie Kräuter in ihrem Beutel.");
+                                Console.WriteLine(" ok, ich will aber trotzdem dass Sie Kräuter sammeln. Gehen Sie durch das Dorf zum Wald, sammeln Sie und nach einiger Zeit haben Sie genügend Kräuter in ihrem Beutel.");
                                 break;
                             default:
-                                Console.WriteLine("Sie können bei Aufgaben nur Ja oder Nein schreiben!");
+                                Console.WriteLine("Sie können bei dieser Aufgaben nur Ja oder Nein schreiben!");
                                 break;
                         }
                     }
                     break;
                 case 2:
-                    Console.WriteLine("Oh ich habe gehört das Sie den Bauer angetroffen haben und im geholfen haben");
-                    Console.WriteLine("Wenn Sie ein Platz zum Wohen brachen hinter den Fluss auf der Wiese hat es noch Platz für ein Haus");
-                    Console.WriteLine("Natürlich können sie sich auch ein Zimmer im Dorf mieten oder im Wald vor einen Lagerfuer schlafen");
-                    Console.WriteLine("Geht das  sicher für Sie so in Ortnung.");
+                    Console.WriteLine("Oh, ich habe gehört das Sie den Bauer angetroffen haben und ihm geholfen haben");
+                    Console.WriteLine("Wenn Sie ein Platz zum wohnen brauchen, hinter dem Fluss, auf der Wiese, hat es noch Platz für Häuser.");
+                    Console.WriteLine("Natürlich können sie sich auch ein Zimmer im Dorf mieten oder im Wald vor einem Lagerfeuer schlafen.");
+                    Console.WriteLine("Geht das sicher für Sie so in Ordnung.");
                     _speicherort.BrauerAufgabe = true;
                     break;
                 case 3:
 
                 default:
                     Console.WriteLine("Es ist ein Systemfehler aufgetreten.");
-                    Console.WriteLine("Sie können einfach weitermachen");
+                    Console.WriteLine("Sie können einfach weitermachen.");
                     break;
             }
         }
@@ -72,48 +73,49 @@
             switch(_speicherort.BauerAufgabeStuffe)
             {
                 case 0:
-                    Console.WriteLine("Hallo Fremder wie kommt es zu dem das Sie hier auf der Insel der Ernte?");
-                    Console.WriteLine("Egal wie Sie schon hier seit könnt ihr mir ein gefallen helfen?");
-                    Console.WriteLine("Könnten Sie mir bitte 1 Birne und 1 Apfel bringen?");
+                    Console.WriteLine("Hallo Fremder, wie kommt es zu dem das Sie hier auf der Insel der Ernte sind?");
+                    Console.WriteLine("Egal, wenn Sie schon hier sind, könnt Sie mir helfen?");
+                    Console.WriteLine("Könnten Sie mir bitte eine Birne und ein Apfel bringen?");
                     Console.WriteLine("Ich will eine Pause machen und habe keine Früchte");
                     _speicherort.BauerAufgabeStuffe++;
                     break;
                 case 1:
-                    Console.WriteLine("Oh Sie sind zurück haben sie die Früchte?");
+                    Console.WriteLine("Oh, Sie sind zurück. Haben Sie die Früchte geplückt?");
                     eingabe = Console.ReadLine();
                     if (eingabe != null)
                     {
                         switch(eingabe)
                         {
                             case "Ja":
-                                Console.WriteLine("Zeigen Sie mal her");
+                                Console.WriteLine("Zeigen Sie mir die Früchte, bitte.");
                                 if(_speicherort.Apfel >= 1 && _speicherort.Birne >= 1)
                                 {
-                                    Console.WriteLine("Oh wie schön wirklich sehr frisch.");
+                                    Console.WriteLine("Oh wie schön sind diese frischen Früchte.");
                                     _speicherort.Apfel = 0;
                                     _speicherort.Birne = 0;
                                     Console.WriteLine("Danke für die Früchte.");
-                                    Console.WriteLine("Sie können jederzeit weiters Essen auch für Sie ernten das sie wieder mehr Energie haben.");
-                                    Console.WriteLine("Essen können Sie bei der Burg im Speisesall.");
+                                    Console.WriteLine("Sie können jederzeit weiteres Essen für sich ernten, damit Sie wieder mehr Energie haben.");
+                                    Console.WriteLine("Essen können Sie bei der Burg im Speisesaal.");
                                     _speicherort.KoenigAufgabe = true;
                                 }
                                 else
                                 {
-                                    Console.WriteLine("Sie haben garkeit oder nur eine Frucht gepückt schauen sie nochmals in ihren Beute nach was sie nicht haben und gehen sie das Ernten.");
+                                    Console.WriteLine("Es fehlt etwas. Sie haben gar keine oder nur eine Frucht gepflückt.");
+                                    Console.WriteLine("Schauen sie nochmals in Ihrem Beutel nach und was fehlt, gehen Sie plücken.");
                                 }
                                 break;
                             case "Nein":
-                                Console.WriteLine("Sie können zust zu den Fruchtbäumen und dann dort Äpfel oder Birnen plücken.");
+                                Console.WriteLine("Spazieren Sie zu den Fruchtbäumen und plücken dort Äpfel oder Birnen.");
                                 break;
                             default:
-                                Console.WriteLine("Sie können bei Aufgaben nur Ja oder Nein schreiben!");
+                                Console.WriteLine("Sie können bei der Aufgabe nur Ja oder Nein schreiben!");
                                 break;
                         }
                     }
                     break;
                 default:
                     Console.WriteLine("Es ist ein Systemfehler aufgetreten.");
-                    Console.WriteLine("Sie können einfach weitermachen");
+                    Console.WriteLine("Sie können einfach weitermachen.");
                     break;
             }
         }
@@ -129,14 +131,14 @@
             switch (_speicherort.BrauerAufgabeStuffe)
             {
                 case 0:
-                    Console.WriteLine("Hallo Fremder wollt ihr ein kleinens Getränk für unterwegs haben?");
+                    Console.WriteLine("Hallo Fremder, wollt Ihr ein kleinens Getränk für unterwegs haben?");
                     eingabe = Console.ReadLine();
                     if (eingabe != null)
                     {
                         bool ft = _verabreitung.JaNeinGross(eingabe);
                         if (ft)
                         {
-                            Console.WriteLine("Gut hier bitte sehr.");
+                            Console.WriteLine("Gut, hier bitte sehr.");
                             _speicherort.Bier = 1;
                             _speicherort.BrauerAufgabeStuffe++;
 
@@ -148,21 +150,21 @@
                     break;
                 case 1:
                     Console.WriteLine("Und wie war es?");
-                    Console.WriteLine("Der gertige geschmakt macht es fast einzigartig.");
-                    Console.WriteLine("Ich würde dies gern mehr herstellen doch ich habe hier fast kein platz zu bauen.");
-                    Console.WriteLine("Haben Sie ein ort wo sie das machen könnten für mich?");
+                    Console.WriteLine("Der gerstige Geschmack macht es einzigartig.");
+                    Console.WriteLine("Ich würde gern mehr davon herstellen, doch ich habe hier fast keinen Platz für ein Brauerei zu bauen.");
+                    Console.WriteLine("Haben Sie ein Ort, wo sie für mich bauen könnten?");
                     eingabe = Console.ReadLine();
                     if (eingabe != null) 
                     {
                         bool ft = _verabreitung.JaNeinGross(eingabe);
                         if (ft)
                         {
-                            Console.WriteLine("Okay sie brache folgen Sachen für diese Aufgabe");
+                            Console.WriteLine("Okay sie brauchen folgende Sachen für diese Aufgabe");
                             Console.WriteLine("Stein: 20");
                             Console.WriteLine("Baumstämme: 14");
                             Console.WriteLine("Ziegel: 25");
                             
-                        }else { Console.WriteLine("Wie schade gut bitte der nächste"); }
+                        }else { Console.WriteLine("Wie schade gut bitte der Nächste."); }
                     }
                     break;
             }
@@ -179,16 +181,16 @@
             switch (_speicherort.SchmiedAufgabeStuffe)
             {
                 case 0:
-                    Console.WriteLine("Hallo Fremder ich würde mich auch gerne mal vorstellen.");
-                    Console.WriteLine("Ich bin Ramon der Schmied und mach mein Handwerk mit Leidenschat und Stolz.");
-                    Console.WriteLine("Hier ein Geschenk eine neue Axt das sie besser Holz hacken können.");
+                    Console.WriteLine("Hallo Fremder ich würde mich gerne vorstellen.");
+                    Console.WriteLine("Ich bin Ramon, der Schmied und mach mein Handwerk mit Leidenschaft und Stolz.");
+                    Console.WriteLine("Hier ein Geschenk für Sie. Es ist eine neue Axt, mit der Sie besser Holz hacken können.");
                     _speicherort.Axt = true;
                     _speicherort.SchmiedAufgabe = false;
                     break;
                 case 1:
-                    Console.WriteLine("Oh Sie haben ein schreiben von Ziegler.");
+                    Console.WriteLine("Oh Sie haben ein Schreiben vom Ziegler.");
                     Console.WriteLine("Natürlich kann ich ihnen ein Säge geben.");
-                    Console.WriteLine("Hier ist sie bitte sehr");
+                    Console.WriteLine("Hier ist die Säge, bitte sehr");
                     _speicherort.Sage = true;
                     _speicherort.SchmiedAufgabe = false;
                     break;
@@ -203,8 +205,8 @@
             switch (_speicherort.ZieglerAufgabeStuffe)
             {
                 case 0:
-                    Console.WriteLine("Hallo Sie, Sie siehen ja aus als könnte Sie mir helfen ich mache für meine Ziegel aller Art doch leider ist mir das Holz ausgegangen.");
-                    Console.WriteLine("Könnten Sie mir mal was bringen dann zeige ich Ihnen wie das geht.");
+                    Console.WriteLine("Hallo, Sie sehen aus als könnte Sie mir helfen. Ich brenne Ziegel aller Arten, aber dafür ist mir das Holz leider ausgegangen.");
+                    Console.WriteLine("Könnten Sie mir Baumstämme bringen, dann zeige ich Ihnen wie das geht.");
                     _speicherort.ZieglerAufgabeStuffe = 1;
                     break;
                 case 1:
@@ -215,11 +217,11 @@
                     {
                         if(_speicherort.Baumstamm >= 1)
                         {
-                            Console.WriteLine("Okay das ist aber ein bisschen sehr langes Holzstücke hast du eine Säge zum das kleiner zu machen?");
+                            Console.WriteLine("Okay das ist aber ein bisschen ein sehr langes Holzstück. Hast du ein Säge um es in Stücke zu sägen?");
                             eingabe = Console.ReadLine();
                             if (_verabreitung.JaNeinGross(eingabe))
                             {
-                                Console.WriteLine("Okay dann komm mich nochmals später besuchen");
+                                Console.WriteLine("Okay dann komm mich später nochmals besuchen");
                                 if (_speicherort.Sage)
                                 {
                                     _speicherort.ZieglerAufgabeStuffe++;
@@ -231,7 +233,7 @@
                                 break;
                             }else
                             {
-                                Console.WriteLine("Okay ich gebe Ihnen ein Schreiben, das Sie bei Schmied eine Säge bekommst.");
+                                Console.WriteLine("Okay ich gebe Ihnen ein Schreiben, damit du beim Schmied eine Säge bekommst.");
                                 _speicherort.SchmiedAufgabe = true;
                                 _speicherort.SchmiedAufgabeStuffe = 2;
                                 _speicherort.ZieglerAufgabeStuffe++;
@@ -243,18 +245,18 @@
                 case 2:
                     if (_speicherort.Sage)
                     {
-                        Console.WriteLine("Oh Sie haben die Säge gut.");
-                        Console.WriteLine("Dann Sägen sie bitte die mal in 4 Teile.");
+                        Console.WriteLine("Oh du hast die Säge wunderbar.");
+                        Console.WriteLine("Dann säge bitte den Baumstamm in vier Stücke.");
                         _verabreitung.HolzSagen();
                         if(7 == _speicherort.Holzstuck)
                         {
-                            Console.WriteLine("Okay und jetzt noch Hacken");
+                            Console.WriteLine("Okay und jetzt noch acht Scheite draus hacken.");
                             _verabreitung.HolzSpalten();    
                         }
                         if(8 == _speicherort.Holzscheite)
                         {
-                            Console.WriteLine("Ah danke jetzt können Sie bei mir immer 2 Lehm und 5 Holzscheite.");
-                            Console.WriteLine("Bei mir Ziegle brennen.");
+                            Console.WriteLine("Ah danke, jetzt kannst du bei mir immer mit zwei Lehm und fünf Holzscheite.");
+                            Console.WriteLine("Ziegel brennen.");
                             _speicherort.ZieglerAufgabe = false;
                             _speicherort.ZiegelHerstellen = true;
                         }
@@ -262,14 +264,14 @@
                     }
                     else
                     {
-                        Console.WriteLine("Sie haben noch nicht die Sage gehen sie zum Schmied die hollen.");
+                        Console.WriteLine("Sie haben noch nicht die Säge, gehe ein beim Schmied holen.");
                         break;
                     }
             }
         }
         else
         {
-            Console.WriteLine("Der Ziegler hat keine Aufgabe für Sie.");
+            Console.WriteLine("Der Ziegler hat keine Aufgabe für Dich.");
         }
     }
 }

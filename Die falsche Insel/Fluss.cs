@@ -22,10 +22,10 @@
             Console.WriteLine("1. Beutel mit Wasser füllen");
             Console.WriteLine("2. Lehm stechen");
             Console.WriteLine("3. Sand nehmen");
-            Console.WriteLine("8. Reisen Bauerhof");
+            Console.WriteLine("8. Reisen zur Insel des Bauerhofes");
             if (_speicherort.Brueckefluss)
             {
-                Console.WriteLine("9. Reisen Wiese");
+                Console.WriteLine("9. Reisen zur Insel der Wiese");
             }
             else
             {

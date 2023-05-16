@@ -14,7 +14,7 @@
         Console.WriteLine("Bier: " + _speicherort.Bier);
         Console.WriteLine("Baumstamm: " + _speicherort.Baumstamm);
         Console.WriteLine("Beutel: " + _speicherort.Beutel);
-        Console.WriteLine("Fiegenpilz: " + _speicherort.Fliegenpilz);
+        Console.WriteLine("Fliegenpilz: " + _speicherort.Fliegenpilz);
         Console.WriteLine("Holzscheite: " + _speicherort.Holzscheite);
         Console.WriteLine("Holzstücke " + _speicherort.Holzstuck);
         Console.WriteLine("Karotten: " + _speicherort.Karotten);
@@ -25,7 +25,7 @@
         Console.WriteLine("Sand: " + _speicherort.Sand);
         Console.WriteLine("Stein: " + _speicherort.Stein);
         Console.WriteLine("Stock:" + _speicherort.Stock);
-        Console.WriteLine("Wasserbäutel " + _speicherort.WasserBeutel);
+        Console.WriteLine("Wasserbeutel " + _speicherort.WasserBeutel);
         Console.WriteLine("Ziegel: " + _speicherort.Ziegel);
     }
 }

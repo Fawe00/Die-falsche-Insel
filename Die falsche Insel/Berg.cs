@@ -15,12 +15,12 @@
     }
     public String BergMain()
     {
-        Console.WriteLine("Wikommen auf dem Berg");
+        Console.WriteLine("Willkommen auf dem Berg");
         while (true)
         {
             _standard.StardartInselnWahl();
             Console.WriteLine("1. Stein abbauen");
-            Console.WriteLine("9. Reisen Wald");
+            Console.WriteLine("9. Reise zur Insel des Waldes");
             _standard.StandartEingabe0Wahl();
             _standard.StardartIhrWahlEingabe();
             _eingabe = Console.ReadLine();
