@@ -32,6 +32,7 @@
                 Console.WriteLine("9. Brücke bauen");
             }
             _standard.StandartEingabe0Wahl();
+            _standard.StardartIhrWahlEingabe();
             _eingabe = Console.ReadLine();
             switch (_eingabe)
             {

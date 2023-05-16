@@ -13,4 +13,8 @@
     {
         Console.WriteLine("Sie können flogende Sachen tun:");
     }
+    public void StardartIhrWahlEingabe()
+    {
+        Console.WriteLine("Geben Sie die Nummer/Buchstabe ein die Sie wählen wollen.");
+    }
 }

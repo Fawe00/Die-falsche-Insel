@@ -22,6 +22,7 @@
             Console.WriteLine("1. Stein abbauen");
             Console.WriteLine("9. Reisen Wald");
             _standard.StandartEingabe0Wahl();
+            _standard.StardartIhrWahlEingabe();
             _eingabe = Console.ReadLine();
             if (_eingabe != null)
             {

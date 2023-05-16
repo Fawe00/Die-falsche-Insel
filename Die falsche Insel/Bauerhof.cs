@@ -30,7 +30,7 @@
             {
                 Console.WriteLine("B. Mit dem Bauer reden");
             }
-            Console.WriteLine("Geben Sie die Nummer/Buchstabe ein die Sie wählen wollen.");
+            _standart.StardartIhrWahlEingabe();
             _eingabe = Console.ReadLine();
             if (_eingabe != null)
             {

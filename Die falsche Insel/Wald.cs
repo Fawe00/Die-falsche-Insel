@@ -22,6 +22,7 @@
             Console.WriteLine("2. Material vom Boden aufsammeln");
             Console.WriteLine("9. Reisen in das Dorf");
             _standard.StandartEingabe0Wahl();
+            _standard.StardartIhrWahlEingabe();
             _eingabe = Console.ReadLine();
             if (_eingabe != null)
             {

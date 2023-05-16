@@ -32,6 +32,7 @@
             {
                 Console.WriteLine("K. Mit dem König reden");
             }
+            _standard.StardartIhrWahlEingabe();
             _eingabe = Console.ReadLine();
             if (_eingabe != null)
             {
