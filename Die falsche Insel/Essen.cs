@@ -38,7 +38,7 @@
                         EssenBier();
                         break;
                     default:
-                        _standard.StandartFalscheEingabe();
+                        _standard.StandardFalscheEingabe();
                         break;
 
                 }

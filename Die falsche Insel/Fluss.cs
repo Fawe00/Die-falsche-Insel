@@ -18,7 +18,7 @@
         Console.WriteLine("Willkommen auf der Insel des Flusses");
         while (true)
         {
-            _standard.StardartInselnWahl();
+            _standard.StandardInselnWahl();
             Console.WriteLine("1. Beutel mit Wasser füllen");
             Console.WriteLine("2. Lehm stechen");
             Console.WriteLine("3. Sand nehmen");
@@ -31,8 +31,8 @@
             {
                 Console.WriteLine("9. Brücke bauen");
             }
-            _standard.StandartEingabe0Wahl();
-            _standard.StardartIhrWahlEingabe();
+            _standard.StandardEingabe0Wahl();
+            _standard.StandardIhrWahlEingabe();
             _eingabe = Console.ReadLine();
             switch (_eingabe)
             {

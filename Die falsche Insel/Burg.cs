@@ -24,15 +24,15 @@
         Console.WriteLine("Willkommen im Dorf des Handels");
         while (true)
         {
-            _standard.StardartInselnWahl();
+            _standard.StandardInselnWahl();
             Console.WriteLine("1. Essen im Speisesaal");
             Console.WriteLine("9. Reise auf die Insel des Dorfes");
-            _standard.StandartEingabe0Wahl();
+            _standard.StandardEingabe0Wahl();
             if ( _speicherort.KoenigAufgabe == true )
             {
                 Console.WriteLine("K. Mit dem König sprechen");
             }
-            _standard.StardartIhrWahlEingabe();
+            _standard.StandardIhrWahlEingabe();
             _eingabe = Console.ReadLine();
             if (_eingabe != null)
             {
@@ -50,7 +50,7 @@
                         _essen.Saal();
                         break;
                     default:
-                        _standard.StandartFalscheEingabe();
+                        _standard.StandardFalscheEingabe();
                         break;
                 }
             }

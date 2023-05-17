@@ -17,12 +17,12 @@
         Console.WriteLine("Willkommen auf der Insel des Waldes");
         while (true)
         {
-            _standard.StardartInselnWahl();
+            _standard.StandardInselnWahl();
             Console.WriteLine("1. Baum fällen");
             Console.WriteLine("2. Material vom Boden aufsammeln");
             Console.WriteLine("9. Reisen in das Dorf");
-            _standard.StandartEingabe0Wahl();
-            _standard.StardartIhrWahlEingabe();
+            _standard.StandardEingabe0Wahl();
+            _standard.StandardIhrWahlEingabe();
             _eingabe = Console.ReadLine();
             if (_eingabe != null)
             {

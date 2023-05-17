@@ -22,7 +22,7 @@
         Console.WriteLine("Willkommen im Dorf des Handels");
         while (true)
         {
-            _standard.StardartInselnWahl();
+            _standard.StandardInselnWahl();
             if (_speicherort.ZiegelHerstellen)
             {
                 Console.WriteLine("1. Ziegel herstellen");
@@ -30,7 +30,7 @@
             Console.WriteLine("7. Reise auf die Insel des Waldes");
             Console.WriteLine("8. Reise auf die Insel der Burg");
             Console.WriteLine("9. Reise auf die Insel des Bauernhofes");
-            _standard.StandartEingabe0Wahl();
+            _standard.StandardEingabe0Wahl();
             if (_speicherort.BrauerAufgabe)
             {
                 Console.WriteLine("B. Brauer");
@@ -39,7 +39,7 @@
             {
                 Console.WriteLine("S. Schmied");
             }
-            _standard.StardartIhrWahlEingabe();
+            _standard.StandardIhrWahlEingabe();
             _eingabe = Console.ReadLine();
             if ( _eingabe != null )
             {
@@ -68,7 +68,7 @@
                         }
                         break;
                     default:
-                        _standard.StandartFalscheEingabe();
+                        _standard.StandardFalscheEingabe();
                         break;
                 }
             }

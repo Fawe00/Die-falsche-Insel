@@ -20,17 +20,17 @@
         Console.WriteLine("Willkommen auf dem Bauerhof der Ernte");
         while (true)
         {
-            _standart.StardartInselnWahl();
+            _standart.StandardInselnWahl();
             Console.WriteLine("1. Feldfrüchte ernten");
             Console.WriteLine("2. Obst ernten");
             Console.WriteLine("8. Reisen zum Fluss");
             Console.WriteLine("9. Reisen ins Dorf");
-            _standart.StandartEingabe0Wahl();
+            _standart.StandardEingabe0Wahl();
             if (_speicherort.BauerAufgabe == true)
             {
                 Console.WriteLine("B. Mit dem Bauer sprechen");
             }
-            _standart.StardartIhrWahlEingabe();
+            _standart.StandardIhrWahlEingabe();
             _eingabe = Console.ReadLine();
             if (_eingabe != null)
             {
@@ -52,7 +52,7 @@
                                     _verarbeitung.KarottenErnten();
                                     break;
                                 default:
-                                    _standart.StandartFalscheEingabe();
+                                    _standart.StandardFalscheEingabe();
                                     break;
                             }
                         }
@@ -73,7 +73,7 @@
                                     _verarbeitung.BirnePlucken();
                                     break;
                                 default:
-                                    _standart.StandartFalscheEingabe();
+                                    _standart.StandardFalscheEingabe();
                                     break;
                             }
                         }
@@ -89,7 +89,7 @@
                         _story.BauerAufgabe();
                         break;
                     default:
-                        _standart.StandartFalscheEingabe();
+                        _standart.StandardFalscheEingabe();
                         break;
                 }
             }

@@ -18,11 +18,11 @@
         Console.WriteLine("Willkommen auf dem Berg");
         while (true)
         {
-            _standard.StardartInselnWahl();
+            _standard.StandardInselnWahl();
             Console.WriteLine("1. Stein abbauen");
             Console.WriteLine("9. Reise zur Insel des Waldes");
-            _standard.StandartEingabe0Wahl();
-            _standard.StardartIhrWahlEingabe();
+            _standard.StandardEingabe0Wahl();
+            _standard.StandardIhrWahlEingabe();
             _eingabe = Console.ReadLine();
             if (_eingabe != null)
             {
@@ -37,7 +37,7 @@
                         _inventar.InventarAusagabe();
                         break;
                     default:
-                        _standard.StandartFalscheEingabe();
+                        _standard.StandardFalscheEingabe();
                         break;
                 }
             }
