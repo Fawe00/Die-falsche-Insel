@@ -1,12 +1,14 @@
 ﻿class Verabreitung
 {
     private readonly Speicherort _speicherort;
+    private readonly Standard _standard;
     private int zaehlerSammeln = 1;
 
 
-    public Verabreitung(Speicherort speicherort)
+    public Verabreitung(Speicherort speicherort, Standard standard)
     {
         _speicherort = speicherort;
+        _standard = standard;
     }
     public void Holzhacken()
     {
@@ -59,6 +61,9 @@
             _speicherort.Kraut = kraut;
             _speicherort.Pilz = pilz;
             _speicherort.Energie = energie;
+        }else
+        {
+            _standard.StandardEnergieMangelAusfurlich(1);
         }
     }
     public void SteinAbBauen()
@@ -72,6 +77,10 @@
             _speicherort.Energie = energie;
             _speicherort.Stein = stein;
         }
+        else
+        {
+            _standard.StandardEnergieMangelAusfurlich(4);
+        }
     }
     public void KarottenErnten()
     {
@@ -83,6 +92,10 @@
             karotten++;
             _speicherort.Energie = energie;
             _speicherort.Karotten = karotten;
+        }
+        else
+        {
+            _standard.StandardEnergieMangelAusfurlich(1);
         }
     }
     public void KartoffelnErnten()
@@ -96,6 +109,10 @@
             _speicherort.Energie = energie;
             _speicherort.Kartoffeln = kartoffeln;
         }
+        else
+        {
+            _standard.StandardEnergieMangelAusfurlich(3);
+        }
     }
     public void ApfelPlucken()
     {
@@ -108,6 +125,10 @@
             _speicherort.Apfel = apfel;
             _speicherort.Energie = energie;
         }
+        else
+        {
+            _standard.StandardEnergieMangelAusfurlich(1);
+        }
     }
     public void BirnePlucken()
     {
@@ -119,6 +140,10 @@
             birne++;
             _speicherort.Birne = birne;
             _speicherort.Energie = energie;
+        }
+        else
+        {
+            _standard.StandardEnergieMangelAusfurlich(1);
         }
     }
     public void Wasserschoepfen()
@@ -139,6 +164,10 @@
                 Console.WriteLine("Sie haben keine Beutel zum befüllen mit Wasser.");
             }
         }
+        else
+        {
+            _standard.StandardEnergieMangelAusfurlich(1);
+        }
         _speicherort.Energie = energie;
         _speicherort.Beutel = beutel;
         _speicherort.WasserBeutel = wasserbeutel;
@@ -152,6 +181,10 @@
             lehm++;
             energie -= 2;
         }
+        else
+        {
+            _standard.StandardEnergieMangelAusfurlich(2);
+        }
         _speicherort.Energie = energie;
         _speicherort.Lehm = lehm;
     }
@@ -163,6 +196,10 @@
         {
             sand++;
             energie -= 2;
+        }
+        else
+        {
+            _standard.StandardEnergieMangelAusfurlich(2);
         }
         _speicherort.Energie = energie;
         _speicherort.Sand = sand;
@@ -178,6 +215,10 @@
             energie -= 4;
             baumstamm--;
         }
+        else
+        {
+            _standard.StandardEnergieMangelAusfurlich(4);
+        }
         _speicherort.Baumstamm = baumstamm;
         _speicherort.Energie = energie;
         _speicherort.Holzstuck = holzstucke;
@@ -192,6 +233,10 @@
             energie -= 7;
             holzstucke--;
             holzscheite += 8;
+        }
+        else
+        {
+            _standard.StandardEnergieMangelAusfurlich(7);
         }
         _speicherort.Energie = energie;
         _speicherort.Holzscheite = holzscheite;
@@ -209,6 +254,10 @@
             lehm -= 2;
             holzscheite -= 5;
             ziegel--;
+        }
+        else
+        {
+            _standard.StandardEnergieMangelAusfurlich(2);
         }
         _speicherort.Energie = energie;
         _speicherort.Ziegel = ziegel;
@@ -241,7 +290,7 @@
                     }
                     else
                     {
-                        Console.WriteLine("Sie haben zu wenig energie, Sie bauchen 25 davon");
+                        _standard.StandardEnergieMangelAusfurlich(25);
                     }
                 }
                 else
@@ -260,6 +309,7 @@
         switch (eingabe)
         {
             case "j":
+            case "y":
             case "ja":
             case "J":
             case "Ja":
