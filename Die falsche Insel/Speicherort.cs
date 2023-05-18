@@ -38,10 +38,10 @@
     private bool bauerAufgabeErhalten = true;
     private int bauerAufbabenStuffe = 0;
     //Brauer
-    private bool brauerAufgabeErhalten = false;
+    private bool brauerAufgabeErhalten = true;
     private int brauerAufgabeStuffe = 0;
     //Schmied
-    private bool schmiedAufgabeErhalten = false;
+    private bool schmiedAufgabeErhalten = true;
     private int schmiedAufgabeStuffe = 0;
     //Ziegler
     private bool zieglerAufgabeErhalten = false;

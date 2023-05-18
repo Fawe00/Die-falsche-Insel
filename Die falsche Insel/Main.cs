@@ -6,7 +6,7 @@
         Standard standard = new Standard();
         Speicherort speicherort = new Speicherort(1000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
         Inventar inventar = new Inventar(speicherort);
-        Verabreitung verabreitung = new Verabreitung(speicherort);
+        Verabreitung verabreitung = new Verabreitung(speicherort, standard);
         Story story = new Story(speicherort, verabreitung);
         Essen essen = new Essen(speicherort, standard);
         Wald wald = new Wald(verabreitung, inventar, standard);

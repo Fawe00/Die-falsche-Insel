@@ -31,11 +31,11 @@
             Console.WriteLine("8. Reise auf die Insel der Burg");
             Console.WriteLine("9. Reise auf die Insel des Bauernhofes");
             _standard.StandardEingabe0Wahl();
-            if (_speicherort.BrauerAufgabe)
+            if (_speicherort.BrauerAufgabe == true)
             {
                 Console.WriteLine("B. Brauer");
             }
-            if( _speicherort.SchmiedAufgabe)
+            if(_speicherort.SchmiedAufgabe == true)
             {
                 Console.WriteLine("S. Schmied");
             }

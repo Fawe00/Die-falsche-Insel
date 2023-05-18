@@ -19,6 +19,6 @@
     }
     public void StandardEnergieMangelAusfurlich(int n)
     {
-        Console.WriteLine("Sie brachen für diese " + n + " Energie.")
+        Console.WriteLine("Sie brachen für diese " + n + " Energie.");
     }
 }

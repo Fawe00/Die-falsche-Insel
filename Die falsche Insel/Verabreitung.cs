@@ -119,7 +119,7 @@
     {
         int energie = _speicherort.Energie;
         int apfel = _speicherort.Apfel;
-        if (apfel >= 1)
+        if (energie >= 1)
         {
             energie -= 1;
             apfel++;

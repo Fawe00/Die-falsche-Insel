@@ -97,6 +97,7 @@
                                     Console.WriteLine("Sie können jederzeit weiteres Essen für sich ernten, damit Sie wieder mehr Energie haben.");
                                     Console.WriteLine("Essen können Sie bei der Burg im Speisesaal.");
                                     _speicherort.KoenigAufgabe = true;
+                                    _speicherort.BauerAufgabe = false;
                                 }
                                 else
                                 {
