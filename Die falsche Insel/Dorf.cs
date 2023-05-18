@@ -1,6 +1,6 @@
 ﻿class Dorf
 {
-    private String _eingabe = null;
+    private String _eingabe;
     private readonly Verabreitung _verarbeitung;
     private readonly Inventar _inventar;
     private readonly Standard _standard;
@@ -35,7 +35,7 @@
             {
                 Console.WriteLine("B. Brauer");
             }
-            if(_speicherort.SchmiedAufgabe == true)
+            if (_speicherort.SchmiedAufgabe == true)
             {
                 Console.WriteLine("S. Schmied");
             }

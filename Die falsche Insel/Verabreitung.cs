@@ -130,7 +130,7 @@
         {
             energie -= 1;
             apfel++;
-            _standard.StandardWasBekommen(1, "Apfel")
+            _standard.StandardWasBekommen(1, "Apfel");
         }
         else
         {
