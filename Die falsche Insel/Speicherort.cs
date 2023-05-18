@@ -40,6 +40,9 @@
     //Brauer
     private bool brauerAufgabeErhalten = true;
     private int brauerAufgabeStuffe = 0;
+    //Minenarbeiter
+    private bool minenarbeiterAufgabeErhalten = false;
+    private int minenarbeiterAufgabeStuffe = 0;
     //Schmied
     private bool schmiedAufgabeErhalten = true;
     private int schmiedAufgabeStuffe = 0;
@@ -81,6 +84,8 @@
     public int BauerAufgabeStuffe { get => bauerAufbabenStuffe; set => bauerAufbabenStuffe = value;}
     public bool BrauerAufgabe { get => brauerAufgabeErhalten; set => brauerAufgabeErhalten = value;}
     public int BrauerAufgabeStuffe { get => brauerAufgabeStuffe; set => brauerAufgabeStuffe = value;}
+    public bool MinenarbeiterAufgabe { get => minenarbeiterAufgabeErhalten; set => minenarbeiterAufgabeErhalten = value; }
+    public int MinenarbeiterAufgabeStuffe { get => minenarbeiterAufgabeStuffe; set => minenarbeiterAufgabeStuffe= value;}
     public bool SchmiedAufgabe { get => schmiedAufgabeErhalten; set => schmiedAufgabeErhalten = value;}
     public int SchmiedAufgabeStuffe { get => schmiedAufgabeStuffe; set => schmiedAufgabeStuffe = value;}
     public bool ZieglerAufgabe { get => zieglerAufgabeErhalten; set => zieglerAufgabeErhalten = value;}
