@@ -18,6 +18,7 @@
         {
             energie -= 5;
             baumstamm++;
+            _standard.StandardWasBekommen(1, "Baumstamm");
         }
         else
         {
@@ -41,18 +42,22 @@
                 case 0:
                     fliegenpilz++;
                     zaehlerSammeln++;
+                    _standard.StandardWasBekommen(1, "Fliegenpilz");
                     break;
                 case 1:
                     pilz++;
                     zaehlerSammeln++;
+                    _standard.StandardWasBekommen(1, "Pilz");
                     break;
                 case 2:
                     stock++;
                     zaehlerSammeln++;
+                    _standard.StandardWasBekommen(1, "Stock");
                     break;
                 case 3:
                     kraut++;
                     zaehlerSammeln = 0;
+                    _standard.StandardWasBekommen(1, "Kraut");
                     break;
 
             }
@@ -74,6 +79,7 @@
         {
             energie -= 4;
             stein++;
+            _standard.StandardWasBekommen(1, "Stein");
         }
         else
         {
@@ -90,7 +96,7 @@
         {
             energie -= 1;
             karotten++;
-            
+            _standard.StandardWasBekommen(1, "Karotten");
         }
         else
         {
@@ -107,6 +113,7 @@
         {
             energie -= 3;
             kartoffeln++;
+            _standard.StandardWasBekommen(1, "Kartoffeln");
         }
         else
         {
@@ -123,6 +130,7 @@
         {
             energie -= 1;
             apfel++;
+            _standard.StandardWasBekommen(1, "Apfel")
         }
         else
         {
@@ -139,6 +147,7 @@
         {
             energie -= 1;
             birne++;
+            _standard.StandardWasBekommen(1, "Birne");
         }
         else
         {
@@ -159,6 +168,7 @@
                 beutel--;
                 energie--;
                 wasserbeutel++;
+                _standard.StandardWasBekommen(1, "Wasserbeutel");
             }
             else
             {
@@ -181,6 +191,7 @@
         {
             lehm++;
             energie -= 2;
+            _standard.StandardWasBekommen(1, "Lehm");
         }
         else
         {
@@ -197,6 +208,7 @@
         {
             sand++;
             energie -= 2;
+            _standard.StandardWasBekommen(1, "Sand");
         }
         else
         {
@@ -215,6 +227,7 @@
             holzstucke += 4;
             energie -= 4;
             baumstamm--;
+            _standard.StandardWasBekommen(4, "Holzstücke");
         }
         else
         {
@@ -234,6 +247,7 @@
             energie -= 7;
             holzstucke--;
             holzscheite += 8;
+            _standard.StandardWasBekommen(8, "Scheite");
         }
         else
         {
@@ -254,7 +268,8 @@
             energie -= 2;
             lehm -= 2;
             holzscheite -= 5;
-            ziegel--;
+            ziegel++;
+            _standard.StandardWasBekommen(1, "Ziegel");
         }
         else
         {
@@ -288,6 +303,7 @@
                         stein -= 9;
                         baumstamm -= 10;
                         _speicherort.Brueckefluss = true;
+                        Console.WriteLine("Die Brücke ist erstellt.");
                     }
                     else
                     {

@@ -21,4 +21,8 @@
     {
         Console.WriteLine("Sie brachen für diese " + n + " Energie.");
     }
+    public void StandardWasBekommen(int menge, string was)
+    {
+        Console.WriteLine("Sie haben " + menge + "x " + was + " bekommmen");
+    }
 }
