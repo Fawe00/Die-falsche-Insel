@@ -190,8 +190,10 @@
                     break;
                 case 1:
                     Console.WriteLine("Oh Sie haben ein Schreiben vom Ziegler.");
-                    Console.WriteLine("Natürlich kann ich ihnen ein Säge geben.");
+                    Console.WriteLine("Natürlich kann ich Ihnen ein Säge geben.");
                     Console.WriteLine("Hier ist die Säge, bitte sehr");
+                    Console.WriteLine("Leider geht jetzt mir das Eisenerz aus können Sie bitte zum Minenarbeiter gehen und bei ihm neues Kaufen.");
+                    Console.WriteLine("Ich zahle ihnen das Geld auch wieder zurück");
                     _speicherort.Sage = true;
                     _speicherort.SchmiedAufgabe = false;
                     break;
@@ -273,6 +275,82 @@
         else
         {
             Console.WriteLine("Der Ziegler hat keine Aufgabe für Dich.");
+        }
+    }
+    public void MinenabrbeiterAufgabe()
+    {
+        if(_speicherort.MinenarbeiterAufgabe)
+        {
+            switch(_speicherort.MinenarbeiterAufgabeStuffe)
+            {
+                case 0:
+                    Console.WriteLine("Hallo Fremder ich bin ein Minenarbeiter ohne Mine");
+                    Console.WriteLine("Können Sie bitte eine neue suchen die letzte hatte ich beim Fluss finde Sie aber dort nicht mehr.");
+                    _speicherort.MinenarbeiterAufgabeStuffe++;
+                    _speicherort.MinenarbeiterAufgabe = false;
+                    break;
+                case 1:
+                    Console.WriteLine("Oh Sie haben neuigkeiten über die Mine haben Sie gefunden.");
+                    eingabe = Console.ReadLine();
+                    bool ft =  _verabreitung.JaNeinGross(eingabe);
+                    if (ft)
+                    {
+                        Console.WriteLine("Okay dann geht ich mal zum Fische und versuche mit Ihm etwas zu bauen.");
+                        _speicherort.MinenarbeiterAufgabeStuffe++;
+                        _speicherort.MinenarbeiterAufgabe = false;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Schade vielleicht das nächste mal.");
+                    }
+                    break;
+                case 2:
+
+                    break;
+
+            }
+        }
+    }
+    public void FischerAufgaben()
+    {
+        if(_speicherort.FischerAufgabe)
+        {
+            switch (_speicherort.FischerAufgabeStuffe)
+            {
+                case 0:
+                    Console.WriteLine("Hallo Sie, könnten Sie mir helfen ein Fisch will nicht an die Angel.");
+                    Console.WriteLine("Hier halten Sie mal.");
+                    _speicherort.Angel = true;
+                    Console.WriteLine("Sie haben jetz die Angel des Fischers");
+                    _verabreitung.Fischen();
+                    if(_speicherort.Fisch >= 1)
+                    {
+                        Console.WriteLine("Oh Sie haben es geschaft toll.");
+                        _speicherort.Angel = false;
+                        Console.WriteLine("Danke ich probier es selber nochmals.");
+                        _speicherort.FischerAufgabeStuffe++;
+                    }
+                    break;
+                case 1:
+                    Console.WriteLine("Oh Sie sind wieder da.");
+                    Console.WriteLine("Fragen:");
+                    Console.WriteLine("1. Kennen Sie hier irgenwo eine Mine?");
+                    Console.WriteLine("0. Gehen");
+                    eingabe = Console.ReadLine();
+                    switch (eingabe)
+                    {
+                        case "1":
+                            Console.WriteLine("Ja sicher hier hinter den Wasserfall.");
+                            Console.WriteLine("Sie können leider solang das Wassser dort ruterkommt nicht rein aber sie können das Wassser umleiten.");
+                            _speicherort.FischerAufgabe = false;
+                            _speicherort.MinenarbeiterAufgabe = true;
+                            break;
+                    }
+                    break;
+                case 2:
+
+                    break;
+            }
         }
     }
 }

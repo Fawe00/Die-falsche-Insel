@@ -280,6 +280,23 @@
         _speicherort.Lehm = lehm;
         _speicherort.Holzscheite = holzscheite;
     }
+    public void Fischen()
+    {
+        int energie = _speicherort.Energie;
+        int fisch = _speicherort.Fisch;
+        if(energie >= 2)
+        {
+            energie -= 2;
+            fisch++;
+            _standard.StandardWasBekommen(1, "Fisch");
+        }
+        else
+        {
+            _standard.StandardEnergieMangelAusfurlich(2);
+        }
+        _speicherort.Fisch = fisch;
+        _speicherort.Energie = energie;
+    }
 
     // Bauen von Objekten
     public void BauenBruecke()

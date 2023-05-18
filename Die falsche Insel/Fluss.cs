@@ -5,13 +5,15 @@
     private readonly Inventar _inventar;
     private readonly Speicherort _speicherort;
     private readonly Standard _standard;
+    private readonly Story _story;
 
-    public Fluss(Verabreitung verabreitung, Inventar inventar, Speicherort speicherort, Standard standard)
+    public Fluss(Verabreitung verabreitung, Inventar inventar, Speicherort speicherort, Standard standard, Story story)
     {
         _verarbeitung = verabreitung;
         _inventar = inventar;
         _speicherort = speicherort;
         _standard = standard;
+        _story = story;
     }
     public String FlussMain()
     {
@@ -30,6 +32,10 @@
             else
             {
                 Console.WriteLine("9. Brücke bauen");
+            }
+            if (_speicherort.FischerAufgabe)
+            {
+                Console.WriteLine("F. Fischer");
             }
             _standard.StandardEingabe0Wahl();
             _standard.StandardIhrWahlEingabe();
@@ -59,6 +65,9 @@
                     }
                 case "0":
                     _inventar.InventarAusagabe();
+                    break;
+                case "F":
+                    _story.FischerAufgaben();
                     break;
             }
         }

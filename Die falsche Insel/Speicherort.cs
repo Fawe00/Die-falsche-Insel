@@ -10,6 +10,7 @@
     private int bier;
     private int baumstamm;
     private int beutel;
+    private int fisch;
     private int fliegenpilz;
     private int holzscheite;
     private int holzstucke;
@@ -24,6 +25,7 @@
     private int wasserBeutel;
     private int ziegel;
     //Werkzeug
+    private bool angel = false;
     private bool axt = false;
     private bool sage = false;
     //Bauen
@@ -49,6 +51,9 @@
     //Ziegler
     private bool zieglerAufgabeErhalten = false;
     private int zieglerAufgabeStuffe = 0;
+    //Fischer
+    private bool fischerAufgabeErhalten = false;
+    private int fischerAufgabeStuffe = 0;
 
     //Produktion
     private bool ziegelHerstellen = false;
@@ -59,6 +64,7 @@
     public int Bier { get => bier; set => bier = value; }
     public int Baumstamm { get => baumstamm; set => baumstamm = value;}
     public int Beutel { get => beutel; set => beutel = value; }
+    public int Fisch { get => fisch; set => fisch = value; }
     public int Fliegenpilz { get => fliegenpilz; set => fliegenpilz = value;}
     public int Holzscheite { get => holzscheite; set => holzscheite = value; }
     public int Holzstuck { get => holzstucke; set => holzstucke = value; }
@@ -73,6 +79,7 @@
     public int WasserBeutel { get => wasserBeutel; set => stock = value; }
     public int Ziegel { get => ziegel; set => ziegel = value; }
 
+    public bool Angel { get => angel; set => angel = value; }
     public bool Axt { get => axt; set => axt = value; }
     public bool Sage { get => sage; set => sage = value; }
 
@@ -90,9 +97,10 @@
     public int SchmiedAufgabeStuffe { get => schmiedAufgabeStuffe; set => schmiedAufgabeStuffe = value;}
     public bool ZieglerAufgabe { get => zieglerAufgabeErhalten; set => zieglerAufgabeErhalten = value;}
     public int ZieglerAufgabeStuffe { get => zieglerAufgabeStuffe; set => zieglerAufgabeStuffe = value;}
-
+    public bool FischerAufgabe { get => fischerAufgabeErhalten; set => fischerAufgabeErhalten = value;}
+    public int FischerAufgabeStuffe { get => fischerAufgabeStuffe; set => fischerAufgabeStuffe = value; }
     public bool ZiegelHerstellen { get => ziegelHerstellen; set => ziegelHerstellen = value;}
-    public Speicherort(int energie,int apfel, int birne,int bier, int beutel, int baumstamm, int fliegenpilz, int karotten, int kartoffeln, int kraut, int lehm, int pilz, int stein, int stock, int wasserbeutel)
+    public Speicherort(int energie,int apfel, int birne,int bier, int beutel, int baumstamm, int fisch, int fliegenpilz, int karotten, int kartoffeln, int kraut, int lehm, int pilz, int stein, int stock, int wasserbeutel)
     {
         Energie = energie;
         Apfel = apfel;
@@ -100,6 +108,7 @@
         Bier = bier;
         Beutel = beutel;
         Baumstamm = baumstamm;
+        Fisch = fisch;
         Fliegenpilz = fliegenpilz;
         Karotten = karotten;
         Kartoffeln = kartoffeln;

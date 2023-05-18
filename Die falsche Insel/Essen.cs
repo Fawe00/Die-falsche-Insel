@@ -13,9 +13,9 @@
     public void Saal()
     {
         int energie = _speicherort.Energie;
-        if (energie <= 100)
+        if (energie <= 1000)
         {
-            Console.WriteLine("Was wollen Sie essen?");
+            Console.WriteLine("Was wollen Sie essen oder trinken?");
             Console.WriteLine("1. Apfel");
             Console.WriteLine("2. Birne");
             Console.WriteLine("3. Karotte");
