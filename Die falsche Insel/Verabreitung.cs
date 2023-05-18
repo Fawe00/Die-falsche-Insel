@@ -18,13 +18,13 @@
         {
             energie -= 5;
             baumstamm++;
-            _speicherort.Energie = energie;
-            _speicherort.Baumstamm = baumstamm;
         }
         else
         {
             Console.WriteLine("Sie haben zu wenig Energie oder keine Axt.");
         }
+        _speicherort.Energie = energie;
+        _speicherort.Baumstamm = baumstamm;
     }
     public void SammelnImWald()
     {
@@ -74,13 +74,13 @@
         {
             energie -= 4;
             stein++;
-            _speicherort.Energie = energie;
-            _speicherort.Stein = stein;
         }
         else
         {
             _standard.StandardEnergieMangelAusfurlich(4);
         }
+        _speicherort.Energie = energie;
+        _speicherort.Stein = stein;
     }
     public void KarottenErnten()
     {
@@ -90,13 +90,14 @@
         {
             energie -= 1;
             karotten++;
-            _speicherort.Energie = energie;
-            _speicherort.Karotten = karotten;
+            
         }
         else
         {
             _standard.StandardEnergieMangelAusfurlich(1);
         }
+        _speicherort.Energie = energie;
+        _speicherort.Karotten = karotten;
     }
     public void KartoffelnErnten()
     {
@@ -106,13 +107,13 @@
         {
             energie -= 3;
             kartoffeln++;
-            _speicherort.Energie = energie;
-            _speicherort.Kartoffeln = kartoffeln;
         }
         else
         {
             _standard.StandardEnergieMangelAusfurlich(3);
         }
+        _speicherort.Energie = energie;
+        _speicherort.Kartoffeln = kartoffeln;
     }
     public void ApfelPlucken()
     {
@@ -122,13 +123,13 @@
         {
             energie -= 1;
             apfel++;
-            _speicherort.Apfel = apfel;
-            _speicherort.Energie = energie;
         }
         else
         {
             _standard.StandardEnergieMangelAusfurlich(1);
         }
+        _speicherort.Apfel = apfel;
+        _speicherort.Energie = energie;
     }
     public void BirnePlucken()
     {
@@ -138,13 +139,13 @@
         {
             energie -= 1;
             birne++;
-            _speicherort.Birne = birne;
-            _speicherort.Energie = energie;
         }
         else
         {
             _standard.StandardEnergieMangelAusfurlich(1);
         }
+        _speicherort.Birne = birne;
+        _speicherort.Energie = energie;
     }
     public void Wasserschoepfen()
     {
