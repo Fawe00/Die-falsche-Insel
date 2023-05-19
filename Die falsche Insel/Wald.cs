@@ -1,11 +1,11 @@
 ﻿class Wald
 {
     private String _eingabe = null;
-    private readonly Verabreitung _verarbeitung;
+    private readonly Verarbeitung _verarbeitung;
     private readonly Inventar _inventar;
     private readonly Standard _standard;
 
-    public Wald(Verabreitung verabreitung, Inventar inventar, Standard standard) 
+    public Wald(Verarbeitung verabreitung, Inventar inventar, Standard standard) 
     {
         _verarbeitung = verabreitung;
         _inventar = inventar;

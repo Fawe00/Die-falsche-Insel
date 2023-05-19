@@ -1,13 +1,13 @@
 ﻿class Bauerhof
 {
     private String _eingabe;
-    private readonly Verabreitung _verarbeitung;
+    private readonly Verarbeitung _verarbeitung;
     private readonly Inventar _inventar;
     private readonly Speicherort _speicherort;
     private readonly Story _story;
     private readonly Standard _standart;
 
-    public Bauerhof(Verabreitung verarbeitung, Inventar inventar, Speicherort speicherort, Story story, Standard standard)
+    public Bauerhof(Verarbeitung verarbeitung, Inventar inventar, Speicherort speicherort, Story story, Standard standard)
     {
         _verarbeitung = verarbeitung;
         _inventar = inventar;

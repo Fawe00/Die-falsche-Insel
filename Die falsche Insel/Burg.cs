@@ -1,7 +1,7 @@
 ﻿class Burg
 {
     private String _eingabe;
-    private readonly Verabreitung _verarbeitung;
+    private readonly Verarbeitung _verarbeitung;
     private readonly Inventar _inventar;
     private readonly Speicherort _speicherort;
     private readonly Story _story;
@@ -10,7 +10,7 @@
 
 
 
-    public Burg(Verabreitung verabreitung, Inventar inventar, Speicherort speicherort, Story story, Essen essen, Standard standard)
+    public Burg(Verarbeitung verabreitung, Inventar inventar, Speicherort speicherort, Story story, Essen essen, Standard standard)
     {
         _verarbeitung = verabreitung;
         _inventar = inventar;

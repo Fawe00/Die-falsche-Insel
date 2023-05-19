@@ -1,13 +1,13 @@
 ﻿class Berg
 {
     private String _eingabe = null;
-    private readonly Verabreitung _verarbeitung;
+    private readonly Verarbeitung _verarbeitung;
     private readonly Inventar _inventar;
     private readonly Standard _standard;
 
 
 
-    public Berg(Verabreitung verabreitung, Inventar inventar, Standard standard)
+    public Berg(Verarbeitung verabreitung, Inventar inventar, Standard standard)
     {
         _verarbeitung = verabreitung;
         _inventar = inventar;

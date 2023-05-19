@@ -1,10 +1,10 @@
 ﻿class Story
 {
     private readonly Speicherort _speicherort;
-    private readonly Verabreitung _verabreitung;
+    private readonly Verarbeitung _verabreitung;
     private String eingabe;
 
-    public Story(Speicherort speicherort, Verabreitung verabreitung)
+    public Story(Speicherort speicherort, Verarbeitung verabreitung)
     {
         _speicherort = speicherort;
         _verabreitung = verabreitung;

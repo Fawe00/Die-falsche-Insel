@@ -1,13 +1,13 @@
 ﻿class Fluss
 {
     private String _eingabe;
-    private readonly Verabreitung _verarbeitung;
+    private readonly Verarbeitung _verarbeitung;
     private readonly Inventar _inventar;
     private readonly Speicherort _speicherort;
     private readonly Standard _standard;
     private readonly Story _story;
 
-    public Fluss(Verabreitung verabreitung, Inventar inventar, Speicherort speicherort, Standard standard, Story story)
+    public Fluss(Verarbeitung verabreitung, Inventar inventar, Speicherort speicherort, Standard standard, Story story)
     {
         _verarbeitung = verabreitung;
         _inventar = inventar;

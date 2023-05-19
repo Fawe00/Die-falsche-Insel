@@ -1,11 +1,11 @@
-﻿class Verabreitung
+﻿class Verarbeitung
 {
     private readonly Speicherort _speicherort;
     private readonly Standard _standard;
     private int zaehlerSammeln = 1;
 
 
-    public Verabreitung(Speicherort speicherort, Standard standard)
+    public Verarbeitung(Speicherort speicherort, Standard standard)
     {
         _speicherort = speicherort;
         _standard = standard;

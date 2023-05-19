@@ -1,7 +1,7 @@
 ﻿class Dorf
 {
     private String _eingabe;
-    private readonly Verabreitung _verarbeitung;
+    private readonly Verarbeitung _verarbeitung;
     private readonly Inventar _inventar;
     private readonly Standard _standard;
     private readonly Speicherort _speicherort;
@@ -9,7 +9,7 @@
 
 
 
-    public Dorf(Verabreitung verabreitung, Inventar inventar, Standard standard, Speicherort speicherort, Story story)
+    public Dorf(Verarbeitung verabreitung, Inventar inventar, Standard standard, Speicherort speicherort, Story story)
     {
         _verarbeitung = verabreitung;
         _inventar = inventar;
