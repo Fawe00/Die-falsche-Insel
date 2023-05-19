@@ -346,6 +346,7 @@
             case "y":
             case "ja":
             case "J":
+            case "Y":
             case "Ja":
                 return true;
             case "n":
