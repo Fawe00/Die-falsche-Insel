@@ -4,7 +4,7 @@
     {
         Console.WriteLine("Das Programm wird gestartet");
         Standard standard = new Standard();
-        Speicherort speicherort = new Speicherort(1000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+        Speicherort speicherort = new Speicherort(1000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
         Inventar inventar = new Inventar(speicherort);
         Verabreitung verabreitung = new Verabreitung(speicherort, standard);
         Story story = new Story(speicherort, verabreitung);

@@ -100,7 +100,7 @@
     public bool FischerAufgabe { get => fischerAufgabeErhalten; set => fischerAufgabeErhalten = value;}
     public int FischerAufgabeStuffe { get => fischerAufgabeStuffe; set => fischerAufgabeStuffe = value; }
     public bool ZiegelHerstellen { get => ziegelHerstellen; set => ziegelHerstellen = value;}
-    public Speicherort(int energie,int apfel, int birne,int bier, int beutel, int baumstamm, int fisch, int fliegenpilz, int karotten, int kartoffeln, int kraut, int lehm, int pilz, int stein, int stock, int wasserbeutel)
+    public Speicherort(int energie,int apfel, int birne,int bier, int beutel, int baumstamm, int fisch, int fliegenpilz, int karotten, int kartoffeln, int kraut, int lehm, int pilz, int stein, int stock, int wasserbeutel, int ziegel)
     {
         Energie = energie;
         Apfel = apfel;
@@ -118,5 +118,6 @@
         Stein = stein;
         Stock = stock;
         WasserBeutel = wasserbeutel;
+        Ziegel = ziegel;
     }
 }
