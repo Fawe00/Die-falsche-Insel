@@ -55,6 +55,7 @@
             energie += 3;
             _speicherort.Energie = energie;
             _speicherort.Karotten = karotte;
+            _standard.StandardWasBekommen(3, "Energie");
         }
         else
         {
@@ -71,6 +72,7 @@
             energie += 5;
             _speicherort.Energie = energie;
             _speicherort.Apfel = apfel;
+            _standard.StandardWasBekommen(5, "Energie");
         }
         else
         {
@@ -87,6 +89,7 @@
             energie += 5;
             _speicherort.Birne = birne;
             _speicherort.Energie = energie;
+            _standard.StandardWasBekommen(5, "Energie");
         }
         else
         {
@@ -103,6 +106,7 @@
             energie += 15;
             _speicherort.Bier = bier;
             _speicherort.Energie = energie;
+            _standard.StandardWasBekommen(15, "Energie");
         }
         else
         {
