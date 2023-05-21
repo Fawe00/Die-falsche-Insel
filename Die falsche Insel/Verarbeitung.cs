@@ -311,15 +311,15 @@
             bool janein = JaNeinGross(eingabe);
             if (janein) {
 
-                if (baumstamm == 10 && stein == 9)
+                if (baumstamm >= 10 && stein >= 9)
                 {
-                    if (energie == 25)
+                    if (energie >= 25)
                     {
                         Console.WriteLine("Die brücke ist jetzt fertig, Sie können sie jetzt vorsichtig begehen");
                         energie -= 25;
                         stein -= 9;
                         baumstamm -= 10;
-                        _speicherort.Brueckefluss = true;
+                        _speicherort.BrueckeFluss = true;
                         Console.WriteLine("Die Brücke ist erstellt.");
                     }
                     else

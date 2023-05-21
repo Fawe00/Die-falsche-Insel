@@ -30,6 +30,8 @@
     private bool sage = false;
     //Bauen
     private bool brueckeFluss = false;
+    private bool muhleWiese = false;
+    private bool sagewerkWiese = false;
 
 
     //Story
@@ -49,7 +51,7 @@
     private bool schmiedAufgabeErhalten = true;
     private int schmiedAufgabeStuffe = 0;
     //Ziegler
-    private bool zieglerAufgabeErhalten = false;
+    private bool zieglerAufgabeErhalten = true;
     private int zieglerAufgabeStuffe = 0;
     //Fischer
     private bool fischerAufgabeErhalten = false;
@@ -83,7 +85,9 @@
     public bool Axt { get => axt; set => axt = value; }
     public bool Sage { get => sage; set => sage = value; }
 
-    public bool Brueckefluss { get => brueckeFluss; set => brueckeFluss = value; }
+    public bool BrueckeFluss { get => brueckeFluss; set => brueckeFluss = value; }
+    public bool MuhleWiese { get => muhleWiese; set => muhleWiese = value; }
+    public bool SagewerkWiese { get => sagewerkWiese; set => sagewerkWiese = value; }
 
     public bool KoenigAufgabe { get => koenigAugabeErhaeltlich; set => koenigAugabeErhaeltlich = value;}
     public int KoenigAugabenStuffe { get => koenigAugebeStuffe; set => koenigAugebeStuffe = value;}

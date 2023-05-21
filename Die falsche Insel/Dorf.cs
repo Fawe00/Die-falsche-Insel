@@ -39,6 +39,10 @@
             {
                 Console.WriteLine("S. Schmied");
             }
+            if ( _speicherort.ZieglerAufgabe == true)
+            {
+                Console.WriteLine("Z. Ziegler");
+            }
             _standard.StandardIhrWahlEingabe();
             _eingabe = Console.ReadLine();
             if ( _eingabe != null )
@@ -59,6 +63,9 @@
                         break;
                     case "S":
                         _story.SchmiedAufgabe();
+                        break;
+                    case "Z":
+                        _story.ZieglerAufgabe();
                         break;
                     case "1":
                         if (_speicherort.ZiegelHerstellen)

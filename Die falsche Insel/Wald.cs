@@ -20,6 +20,7 @@
             _standard.StandardInselnWahl();
             Console.WriteLine("1. Baum fällen");
             Console.WriteLine("2. Material vom Boden aufsammeln");
+            Console.WriteLine("8. Reisen auf dem Berg");
             Console.WriteLine("9. Reisen in das Dorf");
             _standard.StandardEingabe0Wahl();
             _standard.StandardIhrWahlEingabe();
@@ -39,6 +40,8 @@
                         break;
                     case "9":
                         return "Dorf";
+                    case "8":
+                        return "Berg";
                     default:
                         Console.WriteLine("Die Angabe stimmt nicht überein.");
                         break;

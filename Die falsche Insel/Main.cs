@@ -13,10 +13,10 @@
         Dorf dorf = new Dorf(verarbeitung, inventar, standard, speicherort, story);
         Burg burg = new Burg(verarbeitung, inventar, speicherort, story, essen, standard);
         Berg berg = new Berg(verarbeitung, inventar, standard);
-        Wiese wiese = new Wiese(verarbeitung, inventar, speicherort);
+        Wiese wiese = new Wiese(verarbeitung, inventar, speicherort, standard);
         Bauerhof bauerhof = new Bauerhof(verarbeitung, inventar, speicherort, story, standard);
         Fluss fluss = new Fluss(verarbeitung, inventar, speicherort, standard, story);
-        Programm programm = new Programm(wald, dorf, burg, berg, bauerhof, fluss);
+        Programm programm = new Programm(wald, dorf, burg, berg, bauerhof, fluss, wiese);
         programm.Runde();
 
     }
